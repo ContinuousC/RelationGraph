@@ -1,0 +1,109 @@
+################################################################################
+# Copyright ContinuousC. Licensed under the "Elastic License 2.0".             #
+################################################################################
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: relation-graph
+  description: Relation Graph library
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - title: Drone Builds
+      url: https://drone.contc/ContinuousC/RelationGraph
+    - title: Demo Deploy
+      url: https://argocd.contc/applications/argocd/tenant-demo.continuousc.in-cluster
+    - title: ContinuousC
+      url: https://tenant-demo.continuousc.contc/view/application?dateTimeCurrent=now&dateTimeStart=PT15M&dateTimeEnd=now&viewType=topology&topology=Services
+spec:
+  type: library
+  lifecycle: production
+  owner: developers
+  system: continuousc-core
+  dependsOn:
+    - component:prometheus-core
+    - component:prometheus-api
+    - component:prometheus-expr
+    - component:prometheus-schema
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: relation-graph-engine
+  description: Relation Graph Engine
+  annotations:
+    backstage.io/techdocs-entity: component:relation-graph
+  links:
+    - title: Drone Builds
+      url: https://drone.contc/ContinuousC/RelationGraph
+    - title: Demo Deploy
+      url: https://argocd.contc/applications/argocd/tenant-demo.continuousc.in-cluster
+    - title: ContinuousC
+      url: https://tenant-demo.continuousc.contc/view/application?dateTimeCurrent=now&dateTimeStart=PT15M&dateTimeEnd=now&viewType=topology&topology=Services
+    - title: Traces
+      url: https://tenant-demo.continuousc.contc/jaeger/search?limit=20&lookback=1h&maxDuration&minDuration&service=relation-graph-engine
+spec:
+  type: service
+  lifecycle: production
+  owner: developers
+  system: continuousc-core
+  providesApis:
+    - relation-graph-api
+  dependsOn:
+    - component:opensearch
+    - component:prometheus
+    - component:dbdaemon
+    - component:relation-graph
+    - component:prometheus-core
+    - component:prometheus-api
+    - component:prometheus-expr
+    - component:prometheus-schema
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: relation-graph-wasm
+  description: Relation Graph WASM library
+  annotations:
+    backstage.io/techdocs-entity: component:relation-graph
+  links:
+    - title: Drone Builds
+      url: https://drone.contc/ContinuousC/RelationGraph
+    - title: Demo Deploy
+      url: https://argocd.contc/applications/argocd/tenant-demo.continuousc.in-cluster
+    - title: ContinuousC
+      url: https://tenant-demo.continuousc.contc/view/application?dateTimeCurrent=now&dateTimeStart=PT15M&dateTimeEnd=now&viewType=topology&topology=Services
+spec:
+  type: library
+  lifecycle: production
+  owner: developers
+  system: continuousc-core
+  dependsOn:
+    - component:relation-graph
+    - component:prometheus-core
+    - component:prometheus-api
+    - component:prometheus-expr
+    - component:prometheus-schema
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: relation-graph-api
+  description: Relation graph api
+  annotations:
+    backstage.io/techdocs-entity: component:relation-graph
+  links:
+    - title: Drone Builds
+      url: https://drone.contc/ContinuousC/RelationGraph
+    - title: Demo Deploy
+      url: https://argocd.contc/applications/argocd/tenant-demo.continuousc.in-cluster
+    - title: ContinuousC
+      url: https://tenant-demo.continuousc.contc/view/application?dateTimeCurrent=now&dateTimeStart=PT15M&dateTimeEnd=now&viewType=topology&topology=Services
+spec:
+  type: openapi
+  lifecycle: production
+  owner: developers
+  system: continuousc-core
+  definition:
+    $text: ./openapi.json

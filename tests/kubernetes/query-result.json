@@ -1,0 +1,2978 @@
+{
+  "items": {
+    "029903d7-a563-48c0-a150-e9a716a267e0": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T20:52:02Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-j66nk",
+        "namespace": "argocd",
+        "uid": "959862a1-3efe-4a20-80eb-0410f616543d"
+      }
+    },
+    "02d3676a-f66a-43f7-aaa6-eee320e92777": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-12T11:07:53Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-222n6",
+        "namespace": "argocd",
+        "uid": "c31b9c92-1872-4d6c-a284-186ec935133e"
+      }
+    },
+    "04bec98a-6e0f-41d9-b2bb-d2b6366530dd": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T22:39:53Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-5gdbs",
+        "namespace": "argocd",
+        "uid": "b6b2c01b-386f-4e26-9a6d-56389f221a50"
+      }
+    },
+    "05189e0a-8d72-485a-b98b-038299db1db3": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T17:23:34Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-8kr4n",
+        "namespace": "argocd",
+        "uid": "b32bbc25-7f1d-4ce8-b7e3-2e0db6ce8999"
+      }
+    },
+    "080075ef-7360-464d-bf95-3b8e264926d0": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app.kubernetes.io/component": "application-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-metrics",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-application-controller-metrics",
+        "namespace": "argocd",
+        "uid": "9414701c-dadf-4578-9f87-e7b0bee798bc"
+      }
+    },
+    "09edddac-a3b4-4fd5-bae9-36a3419bf6b3": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-12T11:07:16Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-glzvp",
+        "namespace": "argocd",
+        "uid": "9e7a94e8-e521-4027-ac9f-ba93eda3f372"
+      }
+    },
+    "0b45d89a-813c-4787-9bc3-705d1d28649b": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-26T08:18:21Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-mmcbs",
+        "namespace": "argocd",
+        "uid": "3f7c26f0-3942-47db-b19f-05dcb4cb63e6"
+      }
+    },
+    "0cc05448-0d4f-4025-9e16-13bc2b1704bd": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T06:15:05Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-5gc6g",
+        "namespace": "argocd",
+        "uid": "4458c29b-883e-4a45-932b-dc9a262f3714"
+      }
+    },
+    "0dac095e-91e8-4daa-9732-41832db81d55": {
+      "item_type": "deployment",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "apps/v1",
+        "creation_timestamp": "2023-05-16T13:59:43Z",
+        "kind": "Deployment",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-repo-server",
+        "namespace": "argocd",
+        "uid": "f7a255f1-6a8c-4007-9352-6e73ec2a657c"
+      }
+    },
+    "1238dccc-df96-42ad-aa5a-d3df697b338e": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T22:38:33Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-tr6db",
+        "namespace": "argocd",
+        "uid": "6b6e8749-1c29-460a-b293-59a84f955891"
+      }
+    },
+    "14b44652-f3b8-4879-8247-2569f5576c32": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T22:39:15Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-nsg8p",
+        "namespace": "argocd",
+        "uid": "b2ca357e-7f7c-48d3-89aa-c59fcac7321c"
+      }
+    },
+    "15b9f662-0325-42b6-bdbe-b58a34784db3": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T02:29:09Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-v7ctp",
+        "namespace": "argocd",
+        "uid": "0f339539-da13-4ca4-8bce-2983f5e1d0a5"
+      }
+    },
+    "18e1b645-ab09-417e-b670-172ea28c0751": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T05:08:51Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-phqj9",
+        "namespace": "argocd",
+        "uid": "eeb55067-3a25-45f9-8d2b-b1aa7c4c5ad3"
+      }
+    },
+    "1c934e45-e08f-4d69-a4d9-d2cd8caa6640": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:25:50Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-qvnfm",
+        "namespace": "argocd",
+        "uid": "9f94bf0a-795d-48e4-8bfa-05a2a43f387c"
+      }
+    },
+    "243476c5-7d0f-460d-ad60-7ed11fa9412c": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T08:40:08Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha",
+          "argo-cd-redis-ha": "replica",
+          "controller-revision-hash": "argo-cd-redis-ha-server-5cb78fb9fb",
+          "release": "argo-cd",
+          "statefulset.kubernetes.io/pod-name": "argo-cd-redis-ha-server-1"
+        },
+        "name": "argo-cd-redis-ha-server-1",
+        "namespace": "argocd",
+        "uid": "1047d474-fc24-4b09-b8e0-e6821fec078f"
+      }
+    },
+    "265d6e19-9cce-4abe-be22-962d26d58a6e": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T06:09:18Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-m6lwr",
+        "namespace": "argocd",
+        "uid": "479dbd15-be5b-435c-8a97-4dab3c6f9eb7"
+      }
+    },
+    "281644e8-79e6-48f4-bf8c-da10b3dca7d6": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:18:34Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-4psx6",
+        "namespace": "argocd",
+        "uid": "6472ebe2-0c58-4db6-8e11-313cede66c0b"
+      }
+    },
+    "298ff751-b8c7-4a50-8409-4315f3003573": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T21:35:04Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-mtgng",
+        "namespace": "argocd",
+        "uid": "26be92b4-3c0f-40a2-9bf1-beeca91120c3"
+      }
+    },
+    "2994f5ab-5bb8-4672-97ef-d69d10ca048e": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T05:12:30Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-q7fdq",
+        "namespace": "argocd",
+        "uid": "cd9c493a-95a7-4e5d-bcd1-486b1a6c5fde"
+      }
+    },
+    "2c01bd89-41f8-41c3-9c81-d5f023bb023e": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server-metrics",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-repo-server-metrics",
+        "namespace": "argocd",
+        "uid": "3f13c729-a9d7-4750-8f0f-fa654cab9be6"
+      }
+    },
+    "316b29ee-b5e0-42f7-90cf-b5988d9ac751": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T19:15:43Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-2cfrw",
+        "namespace": "argocd",
+        "uid": "e812c15b-2259-460a-9005-34185b8ddef9"
+      }
+    },
+    "342f3956-d29f-402f-b699-1a3632d3126d": {
+      "item_type": "deployment",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "apps/v1",
+        "creation_timestamp": "2023-05-16T13:59:43Z",
+        "kind": "Deployment",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-server",
+        "namespace": "argocd",
+        "uid": "34de7f6a-b938-48c4-bfb1-f70db435c618"
+      }
+    },
+    "3568d262-8d96-4ef6-92c7-ad2df233d04a": {
+      "item_type": "deployment",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "apps/v1",
+        "creation_timestamp": "2023-05-16T13:59:43Z",
+        "kind": "Deployment",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-applicationset-controller",
+        "namespace": "argocd",
+        "uid": "28a6df9b-e976-4d82-bd64-ff1adb998f59"
+      }
+    },
+    "35b40ee1-2935-452c-a78d-75fa7aee10f7": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-06-06T14:42:42Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-gr5vk",
+        "namespace": "argocd",
+        "uid": "c0470be6-5285-4e05-a379-85af75ae8a86"
+      }
+    },
+    "36b59b9f-208d-40f9-bbfc-e48f61f1f958": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:55:09Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-f72jn",
+        "namespace": "argocd",
+        "uid": "df060cce-60d7-47c7-a395-ff0043d3118b"
+      }
+    },
+    "3b3e835b-b6cb-469d-a051-9813f115d324": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T06:11:38Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-jd8bs",
+        "namespace": "argocd",
+        "uid": "07ea4c0b-f2a9-4189-bca4-8eaacff14a5e"
+      }
+    },
+    "3bef3e4c-71e9-4829-8b38-27ca6efb014b": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T22:35:21Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-7jdpk",
+        "namespace": "argocd",
+        "uid": "c2de4683-d76a-46d8-ac1b-bea4f8078d2f"
+      }
+    },
+    "3c76e738-84ff-46b2-b885-6434c5ba05da": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T06:06:04Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-vfhqc",
+        "namespace": "argocd",
+        "uid": "134aab7a-bf22-4d04-a8fc-319de817d558"
+      }
+    },
+    "3dcdd366-c24e-4f68-8672-a97e6f08f207": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T06:06:59Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-w8455",
+        "namespace": "argocd",
+        "uid": "a7edadd3-3e3c-4d52-87b7-a3a9b4824f86"
+      }
+    },
+    "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0": {
+      "item_type": "deployment",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "apps/v1",
+        "creation_timestamp": "2023-05-16T13:59:43Z",
+        "kind": "Deployment",
+        "labels": {
+          "app": "redis-ha",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "chart": "redis-ha-4.23.0",
+          "heritage": "Helm",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy",
+        "namespace": "argocd",
+        "uid": "3a9c05ec-fea1-4e69-908f-2ff286ae0827"
+      }
+    },
+    "3ec49e86-0bb5-469d-8d55-11fe27ba2913": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T19:21:32Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-mllnd",
+        "namespace": "argocd",
+        "uid": "b5d3710d-8579-4e4d-a54e-2683d2e3e19d"
+      }
+    },
+    "43a27218-429a-425f-b7c8-8b377f02c294": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T17:07:29Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-rhms9",
+        "namespace": "argocd",
+        "uid": "e72c6d17-90f5-4bbb-9e75-e9bf356e65d9"
+      }
+    },
+    "44b38e61-9bf7-40df-ab1d-6102beb5c1f1": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:27:18Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-wsf8m",
+        "namespace": "argocd",
+        "uid": "dcc4049e-9b9d-4d1e-824a-5583a2809ceb"
+      }
+    },
+    "456e5cdd-95f7-4992-8fdc-edea763d2497": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T21:31:48Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-dnbpj",
+        "namespace": "argocd",
+        "uid": "fbf710f9-fcbc-4add-9e0d-c4776d5fba30"
+      }
+    },
+    "4d0af185-d749-461a-bb7f-cc15f120d6fd": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T08:00:53Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "application-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-application-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "controller-revision-hash": "argo-cd-argocd-application-controller-5cb549749",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "statefulset.kubernetes.io/pod-name": "argo-cd-argocd-application-controller-0"
+        },
+        "name": "argo-cd-argocd-application-controller-0",
+        "namespace": "argocd",
+        "uid": "0d8215ff-90ce-4a20-9bab-a3544b5322d6"
+      }
+    },
+    "4de71174-b366-4c63-a2c7-3cea092e89e3": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T07:58:18Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-82jsx",
+        "namespace": "argocd",
+        "uid": "2aff91f3-2b90-494b-a670-ff3ae27c8015"
+      }
+    },
+    "50682cc2-7bd8-4575-81bf-e6abce717f96": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app": "redis-ha",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "chart": "redis-ha-4.23.0",
+          "heritage": "Helm",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-announce-2",
+        "namespace": "argocd",
+        "uid": "89013a5a-5cdc-4c0c-9716-fc9d0eaca8f8"
+      }
+    },
+    "52e56ca9-be87-4a40-8761-99bb12579893": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T20:56:44Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-j5sfl",
+        "namespace": "argocd",
+        "uid": "0b14216a-db0f-4451-abb4-b261444f3106"
+      }
+    },
+    "56e9279f-624f-4058-ae73-317a51640906": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T04:53:10Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-jtll8",
+        "namespace": "argocd",
+        "uid": "74c93f84-5d2e-42fb-b81b-09b24459c1c4"
+      }
+    },
+    "57f0dba0-bf63-45c5-b1d9-5ff19bebfa4d": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-25T21:01:49Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-zzqzb",
+        "namespace": "argocd",
+        "uid": "9417a675-e282-4b8a-9a1e-bcd96bc213da"
+      }
+    },
+    "57f5465a-2fab-4537-a41f-29b727835bd6": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:29:40Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-vr6zt",
+        "namespace": "argocd",
+        "uid": "a43ad6ea-ece7-47cc-8076-d3b189ba805e"
+      }
+    },
+    "5da391ce-48f6-4776-88b1-614a22550c95": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-12T11:00:55Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-q5bzp",
+        "namespace": "argocd",
+        "uid": "9029aa27-ea54-487d-aad0-582bbe0a4cad"
+      }
+    },
+    "5ed3f21f-cd26-408e-8292-3c241161cb50": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T08:01:06Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-qfjrn",
+        "namespace": "argocd",
+        "uid": "c525fd14-982f-4302-b1f4-0fe2819da010"
+      }
+    },
+    "602af3eb-be2c-4938-8b9b-04198d5a3fd0": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T04:57:30Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-68jsp",
+        "namespace": "argocd",
+        "uid": "0a423c23-dd2f-4451-b3af-bdc83cc93727"
+      }
+    },
+    "60a97d3e-997f-4590-b660-954ba6b4b45f": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T02:39:40Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-2zpsq",
+        "namespace": "argocd",
+        "uid": "e8314bc8-91c8-46b1-b755-5ad352cff185"
+      }
+    },
+    "68c18124-d9e5-43d3-92ff-70c8f5edc22a": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T20:56:51Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-4ml5m",
+        "namespace": "argocd",
+        "uid": "aeadaa71-f43e-454e-8c9a-f8c8209a0d34"
+      }
+    },
+    "72a48f9b-b92f-4e69-90a2-3964ade5f957": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-06-28T10:12:35Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-2l7dr",
+        "namespace": "argocd",
+        "uid": "3707b08a-429c-4f46-b5f1-84945e54aa0c"
+      }
+    },
+    "7350e5e4-19b3-44cc-8f9b-a8465ec1bc2d": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app": "redis-ha",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "chart": "redis-ha-4.23.0",
+          "heritage": "Helm",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-announce-1",
+        "namespace": "argocd",
+        "uid": "c6aa8489-dba4-4012-955f-079d78c64cda"
+      }
+    },
+    "74795c85-31b3-478a-95b3-12249c703d8f": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T05:02:55Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-lpt2b",
+        "namespace": "argocd",
+        "uid": "6a0c876b-157c-42ff-8723-0790d0807994"
+      }
+    },
+    "74dc5376-669a-4565-b922-9da00a8f4ab0": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:22:01Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-grqzr",
+        "namespace": "argocd",
+        "uid": "9aee9097-2941-4b94-9df4-447648bd5c8e"
+      }
+    },
+    "755cce25-9f38-4cf4-86a6-e9fb53e0917f": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T05:08:50Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-2frhj",
+        "namespace": "argocd",
+        "uid": "eb8f5d58-0912-4cf1-82e6-e12a57d9e827"
+      }
+    },
+    "779db777-6ffd-49d9-805b-59dd874c2a2a": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T04:49:42Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-hqjxl",
+        "namespace": "argocd",
+        "uid": "92446361-d7ed-462a-87e7-8c4e137c15cc"
+      }
+    },
+    "7c4a0a53-7455-49e7-a74d-815da7306baa": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T00:31:18Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-hh578",
+        "namespace": "argocd",
+        "uid": "d549c29d-aa81-4e56-a207-460a5746b654"
+      }
+    },
+    "7d5c88b4-3e28-4b56-92e1-85b7770d9e65": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-12T11:11:11Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-57rv6",
+        "namespace": "argocd",
+        "uid": "f05be724-cec5-4050-a101-1a5b96185b34"
+      }
+    },
+    "7ea89b7e-9fbc-4625-ba00-7f08a90d45b0": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server-metrics",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-server-metrics",
+        "namespace": "argocd",
+        "uid": "fa9408d9-70d1-4698-a9b6-7d7a87687dba"
+      }
+    },
+    "7f15f025-a729-4ee1-a61c-fbdd48851b09": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T08:41:09Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha",
+          "argo-cd-redis-ha": "replica",
+          "controller-revision-hash": "argo-cd-redis-ha-server-5cb78fb9fb",
+          "release": "argo-cd",
+          "statefulset.kubernetes.io/pod-name": "argo-cd-redis-ha-server-2"
+        },
+        "name": "argo-cd-redis-ha-server-2",
+        "namespace": "argocd",
+        "uid": "20425d4c-4c7f-42e3-a969-31a42b193409"
+      }
+    },
+    "86d05285-73d1-44e9-bab6-2c664043b084": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T17:28:02Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-c52dz",
+        "namespace": "argocd",
+        "uid": "412f90ac-e4cd-413d-abd3-d5c140cc9c81"
+      }
+    },
+    "89451f0b-ee88-49b8-a114-34d8d3f1bc78": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-server",
+        "namespace": "argocd",
+        "uid": "da3eb0dd-1880-4707-8c3d-e7e515aa9301"
+      }
+    },
+    "8a0ee929-b1cb-4a0c-9edb-652bc706fbde": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app": "redis-ha",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "chart": "redis-ha-4.23.0",
+          "component": "argo-cd-redis-ha-haproxy",
+          "heritage": "Helm",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy",
+        "namespace": "argocd",
+        "uid": "62d9b93e-cc4f-40e5-9b38-7ca7ce0baf74"
+      }
+    },
+    "8af014ac-2033-4259-aed2-6ca00b97df1d": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-06T05:59:46Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-w4n6w",
+        "namespace": "argocd",
+        "uid": "e399421e-414c-426a-aff5-572ed9d4f4f6"
+      }
+    },
+    "8b287b8e-2f86-4c37-b793-a8cadb67efa1": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:52:52Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-mqcc2",
+        "namespace": "argocd",
+        "uid": "021174c3-9dc2-4c97-901b-c73adbd037be"
+      }
+    },
+    "8b956919-2bdd-4bd2-ae76-1005e0c8fdf5": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T00:39:42Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-mf246",
+        "namespace": "argocd",
+        "uid": "7ff795b2-367c-4b99-9d7f-83965640ad41"
+      }
+    },
+    "8f1e3c86-639f-4d73-9343-1d2ba99f6800": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T22:33:00Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-rt6jk",
+        "namespace": "argocd",
+        "uid": "70dd651c-81b5-44ad-afb1-09fddf15a63f"
+      }
+    },
+    "8f359a5e-e350-46c2-8aea-c7f4963c3020": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T21:34:23Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-z9nr7",
+        "namespace": "argocd",
+        "uid": "75ef78b5-f966-4db7-a375-4fced36666bb"
+      }
+    },
+    "944314b9-8850-411f-894c-3df5631245bd": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-06T16:16:03Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-tmnr4",
+        "namespace": "argocd",
+        "uid": "f14a640a-5376-44f5-b830-d99ce7be4d21"
+      }
+    },
+    "984908a5-1ef5-4422-8f2b-54887461a227": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T07:55:28Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-vd45k",
+        "namespace": "argocd",
+        "uid": "4f2d11b2-ed9b-4a70-84a7-711deba924be"
+      }
+    },
+    "996bdbc1-ca76-404f-88c3-ec7b286d12d5": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-25T21:01:47Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-bctr8",
+        "namespace": "argocd",
+        "uid": "c693a2b1-42d2-412b-915f-6803a4b05dad"
+      }
+    },
+    "9bbe66fe-f407-495d-8481-ec9d3867a3ea": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T17:22:41Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-qrfc5",
+        "namespace": "argocd",
+        "uid": "e15a6bf6-0403-408d-9f76-e3d631ab4629"
+      }
+    },
+    "9dd6cc68-101b-4f65-8939-7437ee690c5d": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app": "redis-ha",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "chart": "redis-ha-4.23.0",
+          "heritage": "Helm",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-announce-0",
+        "namespace": "argocd",
+        "uid": "635e0bf1-2e94-40a0-b5ac-b0189e1d60c3"
+      }
+    },
+    "a2481db5-5f37-43ee-81cd-f5a78bba2283": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T05:00:20Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-w2l6z",
+        "namespace": "argocd",
+        "uid": "a14fbe59-fe79-495f-8406-c603f261dd22"
+      }
+    },
+    "a37cfa8f-4c94-40e9-aaea-37fe8a1a0a31": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T00:39:11Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-7djzs",
+        "namespace": "argocd",
+        "uid": "8ae5c9dc-0897-446f-bbea-8b829c4e0277"
+      }
+    },
+    "a48695c4-4f20-4b2f-8069-eb073591a565": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T21:41:08Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-qpb7q",
+        "namespace": "argocd",
+        "uid": "e41ce6dc-c372-48e2-a714-d36c1ff4c6e0"
+      }
+    },
+    "a67ef8a5-fa82-459b-9659-f2b8e2205a90": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-06T13:05:47Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-drqjg",
+        "namespace": "argocd",
+        "uid": "f23024d6-9c97-47d9-8ac5-d85d0d3062b9"
+      }
+    },
+    "a868945a-20b6-4b9b-8e9c-f75f4555a34b": {
+      "item_type": "statefulset",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "apps/v1",
+        "creation_timestamp": "2023-05-16T13:59:45Z",
+        "kind": "StatefulSet",
+        "labels": {
+          "app.kubernetes.io/component": "application-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-application-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-application-controller",
+        "namespace": "argocd",
+        "uid": "59d46e7b-adc7-4d07-9a7f-1a6b0b814ee8"
+      }
+    },
+    "a87e6901-e0e4-432a-835b-d44839cc204c": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-06T16:24:19Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-w4wk5",
+        "namespace": "argocd",
+        "uid": "8661e59c-fcb6-4d34-b8a5-ee09579c0749"
+      }
+    },
+    "abd50746-70d6-421b-b756-37cc39950e04": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T00:36:28Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-gdrdx",
+        "namespace": "argocd",
+        "uid": "1c9aea46-5ff2-4da7-b202-f0c7a50dea2a"
+      }
+    },
+    "ad9fd191-efa3-4cfb-8e9f-36ab00859dec": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T06:16:34Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-6kmz2",
+        "namespace": "argocd",
+        "uid": "af6001ed-dbeb-4605-b52b-662303c6c56a"
+      }
+    },
+    "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5": {
+      "item_type": "deployment",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "apps/v1",
+        "creation_timestamp": "2023-05-16T13:59:43Z",
+        "kind": "Deployment",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-notifications-controller",
+        "namespace": "argocd",
+        "uid": "9d159f5d-7665-424f-b40c-83f2c87471c7"
+      }
+    },
+    "b52d7bf8-6aab-4905-b078-ea0b1021976d": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-25T21:01:47Z",
+        "kind": "Service",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-metrics",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-notifications-controller-metrics",
+        "namespace": "argocd",
+        "uid": "e006b0a4-0bbf-40d7-8917-94e3fa4921d8"
+      }
+    },
+    "b574d9d7-dd58-4fd1-a900-f2e22a3a2d17": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T02:35:51Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-vhdsl",
+        "namespace": "argocd",
+        "uid": "6fe9a44a-1d97-46f7-9b7b-c193dea81c6e"
+      }
+    },
+    "b8796e10-6d9c-4e0b-aea7-ead462ce2167": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T02:34:13Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-zplx2",
+        "namespace": "argocd",
+        "uid": "c5c14613-ec38-4b93-a291-740f261d6804"
+      }
+    },
+    "baf03df2-2b6a-4a19-b185-7588f930ec12": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T06:16:29Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-m9xbv",
+        "namespace": "argocd",
+        "uid": "82aaa60d-7ca6-48dc-9804-9e12c5b327c5"
+      }
+    },
+    "bcbdef4e-66b4-40f0-92f1-554f968fe625": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T06:12:18Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-zpsc6",
+        "namespace": "argocd",
+        "uid": "e21b6162-2384-46da-9c29-7c61c9f1f420"
+      }
+    },
+    "bd252169-8354-4033-97d9-9c1c16912216": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T17:18:47Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-8cjz6",
+        "namespace": "argocd",
+        "uid": "97973109-68a4-451b-af82-f29e6a08bda8"
+      }
+    },
+    "c1e57894-0a66-4395-a9bd-9d4ae97c263b": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T08:02:49Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-4z9bk",
+        "namespace": "argocd",
+        "uid": "92bedecb-9928-41ac-b7e5-6f3b89237708"
+      }
+    },
+    "c2fc780b-3c19-47e8-9247-38a08e7d4d23": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T06:11:13Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-94kln",
+        "namespace": "argocd",
+        "uid": "39db630e-e444-4063-8afc-67579475b8b7"
+      }
+    },
+    "c5ea1a73-c32f-4316-8fa7-c6348eee014e": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:44:35Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-thlrp",
+        "namespace": "argocd",
+        "uid": "bc22af90-3907-4487-b96b-7164fc214f1e"
+      }
+    },
+    "c67458eb-0973-40eb-92eb-c34ae1c86771": {
+      "item_type": "statefulset",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "apps/v1",
+        "creation_timestamp": "2023-05-26T08:58:46Z",
+        "kind": "StatefulSet",
+        "labels": {
+          "app": "redis-ha",
+          "argo-cd-redis-ha": "replica",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "chart": "redis-ha-4.23.0",
+          "heritage": "Helm",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-server",
+        "namespace": "argocd",
+        "uid": "2b0a2768-9d69-45db-b989-7d1462b5142f"
+      }
+    },
+    "c7fc6770-2df2-44f1-ac4d-a4681e24e186": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T08:04:01Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-jvtj2",
+        "namespace": "argocd",
+        "uid": "91147b3b-8723-4517-aed5-c04556365547"
+      }
+    },
+    "ca0ce510-540d-4152-993b-01c0c98d83fc": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app": "redis-ha",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "chart": "redis-ha-4.23.0",
+          "exporter": "enabled",
+          "heritage": "Helm",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha",
+        "namespace": "argocd",
+        "uid": "864967e1-ffb5-48eb-87e3-4e46e8edc4cc"
+      }
+    },
+    "cc257e96-92e4-420c-8a85-33c583a97d73": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:54:33Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-p9hh8",
+        "namespace": "argocd",
+        "uid": "409b3d99-0f23-4d02-8aa5-f1df32d11a50"
+      }
+    },
+    "cd4db588-464e-45a9-bc9e-3bfc632c208d": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-06-06T14:42:42Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-g7fmn",
+        "namespace": "argocd",
+        "uid": "8392f8de-8690-44a9-be16-d2caf20846bf"
+      }
+    },
+    "ce1a003c-f8cf-490a-b3cd-56055295a084": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T06:15:00Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-86cjv",
+        "namespace": "argocd",
+        "uid": "1fa9174f-2991-4fa2-ba19-a0debf7db91e"
+      }
+    },
+    "ce6f0eb6-9f27-429d-b374-04052c677631": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-applicationset-controller",
+        "namespace": "argocd",
+        "uid": "93b209a1-64b3-4f75-9888-37e841121895"
+      }
+    },
+    "d7549272-20af-42a3-83c4-acc56bdd8a91": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-repo-server",
+        "namespace": "argocd",
+        "uid": "9a6ea526-f33f-4f10-a5c3-c473601685c8"
+      }
+    },
+    "d92a8b32-90f8-4e3b-8ebd-1e208482e17d": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T20:55:02Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-4q2zb",
+        "namespace": "argocd",
+        "uid": "cce9a6a0-76a4-4916-b894-cd0634a16dd0"
+      }
+    },
+    "d93686b8-fe38-4195-ad87-19f20f2300bc": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T21:40:37Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-bbsf8",
+        "namespace": "argocd",
+        "uid": "bd7670b9-534b-4e86-976f-fa75acc5c060"
+      }
+    },
+    "d9ad6c13-eb33-4376-8c23-731908988e0a": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T19:12:53Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-xt6mt",
+        "namespace": "argocd",
+        "uid": "43779a0a-0ea1-46b0-a9c6-c05c7b76f6f4"
+      }
+    },
+    "db0f0f24-af3a-47c4-a1dc-6d1fa3f810da": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T05:14:38Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-7mrps",
+        "namespace": "argocd",
+        "uid": "f15c4b71-da7d-4d54-a155-7063e19c580e"
+      }
+    },
+    "de794a56-656a-4a81-8498-7278b6a81b06": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T00:36:40Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-cxc46",
+        "namespace": "argocd",
+        "uid": "be1751d1-3895-4240-8c78-6cd436f88524"
+      }
+    },
+    "e03e4a42-dff2-4642-b877-32f4d5aa49de": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T17:28:06Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-8n2lh",
+        "namespace": "argocd",
+        "uid": "bed5ac08-1986-412d-80e4-23426f3c48fb"
+      }
+    },
+    "e2a2cbc4-59d1-458a-95c2-30164fcc54d2": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:54:22Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha",
+          "argo-cd-redis-ha": "replica",
+          "controller-revision-hash": "argo-cd-redis-ha-server-5cb78fb9fb",
+          "release": "argo-cd",
+          "statefulset.kubernetes.io/pod-name": "argo-cd-redis-ha-server-0"
+        },
+        "name": "argo-cd-redis-ha-server-0",
+        "namespace": "argocd",
+        "uid": "342b7c3f-1f8f-4eac-bc31-983b65dc0205"
+      }
+    },
+    "e57240f6-8ce6-4756-87a5-1d5992dd8c90": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-07-24T12:17:03Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-hlmpf",
+        "namespace": "argocd",
+        "uid": "1a406646-2417-4d05-982b-e80506586674"
+      }
+    },
+    "ef3757be-c2f9-49fd-baa9-de1c5d8468f7": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:47:41Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-applicationset-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "f5966cfc9"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-f5966cfc9-28p7z",
+        "namespace": "argocd",
+        "uid": "9ae65ace-1cc2-4dad-b8ec-a5ff080c352c"
+      }
+    },
+    "f11d1915-0951-4205-9b00-cfb2ebe947fa": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T19:21:30Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-z56jr",
+        "namespace": "argocd",
+        "uid": "e893425f-bbe0-42ba-8a17-b1e1a4e7430e"
+      }
+    },
+    "f4ec233b-a2a7-403b-a969-0171e325df8e": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-14T18:55:05Z",
+        "kind": "Pod",
+        "labels": {
+          "app": "redis-ha-haproxy",
+          "pod-template-hash": "95df84bdd",
+          "release": "argo-cd"
+        },
+        "name": "argo-cd-redis-ha-haproxy-95df84bdd-88kx7",
+        "namespace": "argocd",
+        "uid": "f3507b6a-3066-4c39-b089-a8e69f245301"
+      }
+    },
+    "f5a1e65a-622c-47f6-bd8e-715ace529d6d": {
+      "item_type": "service",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-05-16T13:59:42Z",
+        "kind": "Service",
+        "labels": {
+          "app.kubernetes.io/component": "applicationset-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-metrics",
+          "app.kubernetes.io/part-of": "argocd",
+          "argocd.delete.tracking/app": "argo-cd-internal-dev-management-cluster-main",
+          "helm.sh/chart": "argo-cd-5.34.5"
+        },
+        "name": "argo-cd-argocd-applicationset-controller-metrics",
+        "namespace": "argocd",
+        "uid": "2a4a2126-9a2f-4b8a-8d35-1cc7ceb57a93"
+      }
+    },
+    "f8c3f306-ddad-46f1-bb6a-8bee8d2969da": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T19:19:09Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "notifications-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-notifications-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "649875ff54"
+        },
+        "name": "argo-cd-argocd-notifications-controller-649875ff54-gf2md",
+        "namespace": "argocd",
+        "uid": "bae9b32b-a447-4145-a550-56c0dd0a4ecc"
+      }
+    },
+    "f8e37ef2-3601-4341-b357-96922a63d52e": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-07T07:05:45Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-7994m",
+        "namespace": "argocd",
+        "uid": "417a0481-d533-4e1c-b61c-96c2a1a19714"
+      }
+    },
+    "fdbb26dd-fa74-4984-9e05-d8042aaecd63": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-13T20:49:15Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "repo-server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-repo-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "564c9f45d"
+        },
+        "name": "argo-cd-argocd-repo-server-564c9f45d-sghqx",
+        "namespace": "argocd",
+        "uid": "e4ffba85-7d68-4087-b40b-ed3929648b88"
+      }
+    },
+    "fea2abbc-3aec-4893-8fe2-9df4dcdb35da": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T04:59:33Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-9s7dh",
+        "namespace": "argocd",
+        "uid": "bfd8d467-f1ef-4421-9b78-6c10cafe705a"
+      }
+    },
+    "ff361c82-d86e-4443-83dc-7a37c63dbf13": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-15T02:39:04Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "server",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-server",
+          "app.kubernetes.io/part-of": "argocd",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "pod-template-hash": "69d7bcf956"
+        },
+        "name": "argo-cd-argocd-server-69d7bcf956-sckh7",
+        "namespace": "argocd",
+        "uid": "943f7dcd-558e-4e4d-b984-52de35d0d408"
+      }
+    },
+    "ff704811-8297-4b89-86d7-cdd0d9ee1cfd": {
+      "item_type": "pod",
+      "parent": "cb016e9e-e311-41c4-9cff-71b8af52121e",
+      "properties": {
+        "apiversion": "v1",
+        "creation_timestamp": "2023-08-17T08:06:26Z",
+        "kind": "Pod",
+        "labels": {
+          "app.kubernetes.io/component": "application-controller",
+          "app.kubernetes.io/instance": "argo-cd",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "argocd-application-controller",
+          "app.kubernetes.io/part-of": "argocd",
+          "controller-revision-hash": "argo-cd-argocd-application-controller-5cb549749",
+          "helm.sh/chart": "argo-cd-5.34.5",
+          "statefulset.kubernetes.io/pod-name": "argo-cd-argocd-application-controller-1"
+        },
+        "name": "argo-cd-argocd-application-controller-1",
+        "namespace": "argocd",
+        "uid": "72b1037a-12a9-466f-90fa-7cb742798322"
+      }
+    }
+  },
+  "relations": {
+    "01754b88-ce53-4e26-ac10-cf34b5a3c833": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "43a27218-429a-425f-b7c8-8b377f02c294"
+    },
+    "01bb45e9-97f7-44aa-995e-c266e8425a60": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "0b45d89a-813c-4787-9bc3-705d1d28649b"
+    },
+    "03ffaa57-d251-4d49-a34d-cc5f9873c38a": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "9bbe66fe-f407-495d-8481-ec9d3867a3ea"
+    },
+    "05f147ad-bce6-4431-9c44-fa4433f18d5c": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "44b38e61-9bf7-40df-ab1d-6102beb5c1f1"
+    },
+    "092540d6-511f-4f09-9425-f2d760a42560": {
+      "relation_type": "service_pod",
+      "source": "ca0ce510-540d-4152-993b-01c0c98d83fc",
+      "target": "e2a2cbc4-59d1-458a-95c2-30164fcc54d2"
+    },
+    "0a77bdcc-1035-4232-8e8d-95b1db4396e9": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "029903d7-a563-48c0-a150-e9a716a267e0"
+    },
+    "0e8fb560-5abf-4551-b027-76d0ce80c831": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "f4ec233b-a2a7-403b-a969-0171e325df8e"
+    },
+    "0ec3880c-8003-4723-ab55-d2cdc06a2335": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "ad9fd191-efa3-4cfb-8e9f-36ab00859dec"
+    },
+    "114fbd51-c249-4811-9184-12c2b8a198b5": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "3ec49e86-0bb5-469d-8d55-11fe27ba2913"
+    },
+    "12369578-9208-492d-aff3-e7062f48ee16": {
+      "relation_type": "service_pod",
+      "source": "8a0ee929-b1cb-4a0c-9edb-652bc706fbde",
+      "target": "36b59b9f-208d-40f9-bbfc-e48f61f1f958"
+    },
+    "147c139c-7581-4fdb-9094-109c0808aaae": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "c1e57894-0a66-4395-a9bd-9d4ae97c263b"
+    },
+    "157445b8-3e64-47f8-858c-583e5d8c55e2": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "8f1e3c86-639f-4d73-9343-1d2ba99f6800"
+    },
+    "16d084f7-3f62-43dc-979a-a1d8b8732663": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "8af014ac-2033-4259-aed2-6ca00b97df1d"
+    },
+    "17e1b938-70d4-4c28-aa57-572ba74b7d75": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "74795c85-31b3-478a-95b3-12249c703d8f"
+    },
+    "1a5fd2e7-4531-4840-83ba-7072289b612b": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "abd50746-70d6-421b-b756-37cc39950e04"
+    },
+    "1afa1295-e085-4d95-a367-068c0934248d": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "35b40ee1-2935-452c-a78d-75fa7aee10f7"
+    },
+    "1b670ce7-3e9d-4229-84fc-5913726e51f3": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "d93686b8-fe38-4195-ad87-19f20f2300bc"
+    },
+    "1c0ace80-9eaf-4cc8-85ae-ed487fa319bb": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "05189e0a-8d72-485a-b98b-038299db1db3"
+    },
+    "2064cde9-de85-45ba-87f5-044e4e353ce2": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "baf03df2-2b6a-4a19-b185-7588f930ec12"
+    },
+    "22a6e1f2-1b30-433e-b080-587cf776a2af": {
+      "relation_type": "service_pod",
+      "source": "080075ef-7360-464d-bf95-3b8e264926d0",
+      "target": "ff704811-8297-4b89-86d7-cdd0d9ee1cfd"
+    },
+    "28c5fa50-b850-4375-bf5c-580926ba4f8a": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "944314b9-8850-411f-894c-3df5631245bd"
+    },
+    "2a608cc5-c9f8-4ded-a035-6637a72d47c4": {
+      "relation_type": "service_pod",
+      "source": "7350e5e4-19b3-44cc-8f9b-a8465ec1bc2d",
+      "target": "243476c5-7d0f-460d-ad60-7ed11fa9412c"
+    },
+    "2b1cb169-b662-4ee2-bca1-5ac35a81aaf5": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "602af3eb-be2c-4938-8b9b-04198d5a3fd0"
+    },
+    "2cba757d-2a23-48d8-9384-628048b0be07": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "74dc5376-669a-4565-b922-9da00a8f4ab0"
+    },
+    "2ee3def9-5399-4a27-8618-0933162bd540": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "bcbdef4e-66b4-40f0-92f1-554f968fe625"
+    },
+    "317128ad-b3a6-4b16-9e31-f530b19a7206": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "d9ad6c13-eb33-4376-8c23-731908988e0a"
+    },
+    "31e0df28-bfb2-46f9-b351-5a339d1b86b6": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "996bdbc1-ca76-404f-88c3-ec7b286d12d5"
+    },
+    "3752b6bb-d5ee-4205-8eea-484bb8e9fe2c": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "e57240f6-8ce6-4756-87a5-1d5992dd8c90"
+    },
+    "3acc5836-ffeb-420f-a792-1300fab36431": {
+      "relation_type": "service_pod",
+      "source": "8a0ee929-b1cb-4a0c-9edb-652bc706fbde",
+      "target": "c7fc6770-2df2-44f1-ac4d-a4681e24e186"
+    },
+    "3eb5d5c1-6b55-4b0f-bd06-27a107d33833": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "8b956919-2bdd-4bd2-ae76-1005e0c8fdf5"
+    },
+    "419182c3-16b0-40a5-a45f-8c3911196f18": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "8b287b8e-2f86-4c37-b793-a8cadb67efa1"
+    },
+    "41c7a8bd-4206-4caa-a4c8-1f4c47dbe035": {
+      "relation_type": "service_pod",
+      "source": "b52d7bf8-6aab-4905-b078-ea0b1021976d",
+      "target": "5ed3f21f-cd26-408e-8292-3c241161cb50"
+    },
+    "4426b5fa-e07d-44c9-8af8-4bb2927593e2": {
+      "relation_type": "service_pod",
+      "source": "50682cc2-7bd8-4575-81bf-e6abce717f96",
+      "target": "7f15f025-a729-4ee1-a61c-fbdd48851b09"
+    },
+    "4493a8a4-f16a-487d-9297-9e41ee0f1e03": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "a67ef8a5-fa82-459b-9659-f2b8e2205a90"
+    },
+    "450dc17a-bcaf-4aa8-812e-08c1e8656396": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "5da391ce-48f6-4776-88b1-614a22550c95"
+    },
+    "456ce9fc-eaf9-4fbf-870d-63e5bfe868da": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "1c934e45-e08f-4d69-a4d9-d2cd8caa6640"
+    },
+    "488d7362-8a1a-443c-a59c-577131b59a44": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "72a48f9b-b92f-4e69-90a2-3964ade5f957"
+    },
+    "4e40c847-337c-4d08-b6cb-90c7f740a855": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "3c76e738-84ff-46b2-b885-6434c5ba05da"
+    },
+    "4e5d095e-83e0-4097-ba53-49ad1633c10a": {
+      "relation_type": "service_pod",
+      "source": "080075ef-7360-464d-bf95-3b8e264926d0",
+      "target": "4d0af185-d749-461a-bb7f-cc15f120d6fd"
+    },
+    "50c5abae-7536-40f1-860d-d5ecc15cd30e": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "984908a5-1ef5-4422-8f2b-54887461a227"
+    },
+    "519402a6-109b-43b1-9b20-c65e9b7e65a6": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "ce1a003c-f8cf-490a-b3cd-56055295a084"
+    },
+    "52bf14d3-a628-4a86-aad4-4614dad17000": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "de794a56-656a-4a81-8498-7278b6a81b06"
+    },
+    "54667fcf-6496-437b-80f0-bb941bfb2f8b": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "57f0dba0-bf63-45c5-b1d9-5ff19bebfa4d"
+    },
+    "5c1cf06d-ed03-47ed-bc1b-e0584f747bc0": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "d92a8b32-90f8-4e3b-8ebd-1e208482e17d"
+    },
+    "5cb76125-05cd-42a3-bc5f-039e919d3f70": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "c2fc780b-3c19-47e8-9247-38a08e7d4d23"
+    },
+    "5f65ecf3-e612-469a-ae3b-0eab1f9a9de5": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "ff361c82-d86e-4443-83dc-7a37c63dbf13"
+    },
+    "61cdf74e-414c-44da-9068-1c0d30fdf2d0": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "56e9279f-624f-4058-ae73-317a51640906"
+    },
+    "65d77fc9-a66d-4a15-8067-ebc493276127": {
+      "relation_type": "statefulset_pod",
+      "source": "a868945a-20b6-4b9b-8e9c-f75f4555a34b",
+      "target": "4d0af185-d749-461a-bb7f-cc15f120d6fd"
+    },
+    "65f1fcf6-7d11-4871-92a1-366082d0e570": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "b574d9d7-dd58-4fd1-a900-f2e22a3a2d17"
+    },
+    "66d8c096-1f14-416b-a5d7-ef5ba6005e32": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "86d05285-73d1-44e9-bab6-2c664043b084"
+    },
+    "675c4950-90ee-45b1-8823-425a5d4b3be6": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "15b9f662-0325-42b6-bdbe-b58a34784db3"
+    },
+    "6838513e-5b44-4414-b0a6-a4180691071a": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "a2481db5-5f37-43ee-81cd-f5a78bba2283"
+    },
+    "69d63e2f-784e-4558-a802-d5e15fcc0ecf": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "f8e37ef2-3601-4341-b357-96922a63d52e"
+    },
+    "6a78905f-a724-47ed-a410-827217391086": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "2994f5ab-5bb8-4672-97ef-d69d10ca048e"
+    },
+    "6c3a8323-ee1e-4693-9cdc-9cfdce0fcbf0": {
+      "relation_type": "service_pod",
+      "source": "8a0ee929-b1cb-4a0c-9edb-652bc706fbde",
+      "target": "0cc05448-0d4f-4025-9e16-13bc2b1704bd"
+    },
+    "6cc14f90-af8f-417a-a921-edd601835d0c": {
+      "relation_type": "statefulset_pod",
+      "source": "a868945a-20b6-4b9b-8e9c-f75f4555a34b",
+      "target": "ff704811-8297-4b89-86d7-cdd0d9ee1cfd"
+    },
+    "6d550c50-2cbe-4759-97bb-f60fb979b0c2": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "02d3676a-f66a-43f7-aaa6-eee320e92777"
+    },
+    "77c4c31d-9b86-4c23-9712-785ae18cf876": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "09edddac-a3b4-4fd5-bae9-36a3419bf6b3"
+    },
+    "790b11bb-05d9-4bf6-9453-d4ed127d90bc": {
+      "relation_type": "service_pod",
+      "source": "f5a1e65a-622c-47f6-bd8e-715ace529d6d",
+      "target": "4de71174-b366-4c63-a2c7-3cea092e89e3"
+    },
+    "7a14ba62-f439-49b6-9ae2-ad9914e1565c": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "755cce25-9f38-4cf4-86a6-e9fb53e0917f"
+    },
+    "7f4efcf7-566a-43a7-895a-1ed879be76a9": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "e03e4a42-dff2-4642-b877-32f4d5aa49de"
+    },
+    "8190d50a-3db5-4b54-9aae-eb60b2d5a181": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "c7fc6770-2df2-44f1-ac4d-a4681e24e186"
+    },
+    "82815f70-022c-48ad-b1a5-c58fd1ecbf0e": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "298ff751-b8c7-4a50-8409-4315f3003573"
+    },
+    "8742508c-9353-45ad-aac5-7e7bd6c3d1b4": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "db0f0f24-af3a-47c4-a1dc-6d1fa3f810da"
+    },
+    "87edecb8-f9c3-4a83-8a62-253550743d23": {
+      "relation_type": "service_pod",
+      "source": "9dd6cc68-101b-4f65-8939-7437ee690c5d",
+      "target": "e2a2cbc4-59d1-458a-95c2-30164fcc54d2"
+    },
+    "8d20b1af-9173-4be2-b5f5-41cf95634100": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "316b29ee-b5e0-42f7-90cf-b5988d9ac751"
+    },
+    "8fea2e21-42f9-4fe2-bf1f-f3e7944a77a3": {
+      "relation_type": "statefulset_pod",
+      "source": "c67458eb-0973-40eb-92eb-c34ae1c86771",
+      "target": "243476c5-7d0f-460d-ad60-7ed11fa9412c"
+    },
+    "9296e2eb-84fb-4041-9d2a-4226623e78e4": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "779db777-6ffd-49d9-805b-59dd874c2a2a"
+    },
+    "9589726f-f5f0-4c92-9802-dbdd7a65524d": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "52e56ca9-be87-4a40-8761-99bb12579893"
+    },
+    "973d6c60-2087-4408-8560-4b04955fe4f7": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "36b59b9f-208d-40f9-bbfc-e48f61f1f958"
+    },
+    "98fa63db-af51-408e-a2a6-6846d031e23b": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "fea2abbc-3aec-4893-8fe2-9df4dcdb35da"
+    },
+    "9d5533c7-d5f5-45e2-a2f0-e7f304e59408": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "5ed3f21f-cd26-408e-8292-3c241161cb50"
+    },
+    "9eec722c-f36b-4a22-99e7-e4bf9662754c": {
+      "relation_type": "statefulset_pod",
+      "source": "c67458eb-0973-40eb-92eb-c34ae1c86771",
+      "target": "7f15f025-a729-4ee1-a61c-fbdd48851b09"
+    },
+    "a342a660-158c-4dca-8904-5212cf54fab5": {
+      "relation_type": "service_pod",
+      "source": "d7549272-20af-42a3-83c4-acc56bdd8a91",
+      "target": "984908a5-1ef5-4422-8f2b-54887461a227"
+    },
+    "a3d52b29-0142-4f0d-99a7-25bb6b977c56": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "f11d1915-0951-4205-9b00-cfb2ebe947fa"
+    },
+    "a5f4c0e7-229d-4a19-a297-a2f2c806ef47": {
+      "relation_type": "service_pod",
+      "source": "ca0ce510-540d-4152-993b-01c0c98d83fc",
+      "target": "243476c5-7d0f-460d-ad60-7ed11fa9412c"
+    },
+    "a71da53a-2396-4b1e-9645-e6e113ef079a": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "c5ea1a73-c32f-4316-8fa7-c6348eee014e"
+    },
+    "aa7ef346-071b-4be8-9113-24408bc6e937": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "0cc05448-0d4f-4025-9e16-13bc2b1704bd"
+    },
+    "ab9e8f0f-e6d3-4ba6-a478-2f0978221e1c": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "3bef3e4c-71e9-4829-8b38-27ca6efb014b"
+    },
+    "ae91f596-1559-4ba0-b9f8-8c3ab05d7951": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "ef3757be-c2f9-49fd-baa9-de1c5d8468f7"
+    },
+    "b20f1e34-091e-4dee-b646-8de8ac05c807": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "18e1b645-ab09-417e-b670-172ea28c0751"
+    },
+    "b460b9de-8b4f-46d5-92cd-7bcfbf673e25": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "7c4a0a53-7455-49e7-a74d-815da7306baa"
+    },
+    "b7bc0d55-06d1-4faf-98a1-a9572fb10c3a": {
+      "relation_type": "service_pod",
+      "source": "89451f0b-ee88-49b8-a114-34d8d3f1bc78",
+      "target": "c1e57894-0a66-4395-a9bd-9d4ae97c263b"
+    },
+    "b93fe09e-3a5f-4592-af65-e8d9e35699d9": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "b8796e10-6d9c-4e0b-aea7-ead462ce2167"
+    },
+    "be9c9fad-654d-4127-8dcf-6ea7ed5f08d1": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "cd4db588-464e-45a9-bc9e-3bfc632c208d"
+    },
+    "c573691c-a636-4dc2-a372-9cfdc7e81e69": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "3b3e835b-b6cb-469d-a051-9813f115d324"
+    },
+    "c71837e4-e9fe-4896-957f-c0fe6fbfe945": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "4de71174-b366-4c63-a2c7-3cea092e89e3"
+    },
+    "c98c68ae-f30d-4b40-8baa-cc1bc82f1c0f": {
+      "relation_type": "service_pod",
+      "source": "7ea89b7e-9fbc-4625-ba00-7f08a90d45b0",
+      "target": "c1e57894-0a66-4395-a9bd-9d4ae97c263b"
+    },
+    "cd4c961e-106c-4f75-8acd-8a4224e25221": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "a48695c4-4f20-4b2f-8069-eb073591a565"
+    },
+    "cdb85898-1eda-4122-8cb1-3664df0fa7fd": {
+      "relation_type": "service_pod",
+      "source": "ca0ce510-540d-4152-993b-01c0c98d83fc",
+      "target": "7f15f025-a729-4ee1-a61c-fbdd48851b09"
+    },
+    "d2fb0771-374a-4b6b-8536-96b08eb136a3": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "1238dccc-df96-42ad-aa5a-d3df697b338e"
+    },
+    "d4943de1-fb12-4d84-b0c6-a95910335838": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "68c18124-d9e5-43d3-92ff-70c8f5edc22a"
+    },
+    "d5438488-7c80-483d-8db8-a810813fc9bc": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "a37cfa8f-4c94-40e9-aaea-37fe8a1a0a31"
+    },
+    "d61a815d-bc4d-42bc-ba7a-5e2c05353a9a": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "281644e8-79e6-48f4-bf8c-da10b3dca7d6"
+    },
+    "d62a0b95-be62-4ddc-a80a-c568a164bb26": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "60a97d3e-997f-4590-b660-954ba6b4b45f"
+    },
+    "d6e28ecf-66b0-492e-9475-91d0aa605682": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "04bec98a-6e0f-41d9-b2bb-d2b6366530dd"
+    },
+    "d7724450-1a1d-4d6c-987d-f72fd6e341fb": {
+      "relation_type": "service_pod",
+      "source": "ce6f0eb6-9f27-429d-b374-04052c677631",
+      "target": "4de71174-b366-4c63-a2c7-3cea092e89e3"
+    },
+    "ddaf3a5b-af20-4aed-b814-159651d34821": {
+      "relation_type": "deployment_pod",
+      "source": "3568d262-8d96-4ef6-92c7-ad2df233d04a",
+      "target": "265d6e19-9cce-4abe-be22-962d26d58a6e"
+    },
+    "de754987-e888-4393-b12b-6f904799b6e9": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "f8c3f306-ddad-46f1-bb6a-8bee8d2969da"
+    },
+    "de77047d-2a78-4ce2-89bc-855506584dfa": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "fdbb26dd-fa74-4984-9e05-d8042aaecd63"
+    },
+    "df83019e-095b-48f6-9ace-880e67e922f0": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "a87e6901-e0e4-432a-835b-d44839cc204c"
+    },
+    "e0cc6cec-1fd0-4374-8b0a-175f02753f4f": {
+      "relation_type": "statefulset_pod",
+      "source": "c67458eb-0973-40eb-92eb-c34ae1c86771",
+      "target": "e2a2cbc4-59d1-458a-95c2-30164fcc54d2"
+    },
+    "e2b88018-a87c-4ffb-ab32-777e0ce6c7e7": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "cc257e96-92e4-420c-8a85-33c583a97d73"
+    },
+    "e56ec808-7ca3-4a2e-a3d8-91201a7f2249": {
+      "relation_type": "service_pod",
+      "source": "2c01bd89-41f8-41c3-9c81-d5f023bb023e",
+      "target": "984908a5-1ef5-4422-8f2b-54887461a227"
+    },
+    "e8e44ee9-e360-4ab0-93b8-9105db0ec5e9": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "14b44652-f3b8-4879-8247-2569f5576c32"
+    },
+    "ec375171-516c-4d2d-930a-bcee09165bbb": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "456e5cdd-95f7-4992-8fdc-edea763d2497"
+    },
+    "ef810a59-574c-4307-a15c-4add7d823907": {
+      "relation_type": "deployment_pod",
+      "source": "b4c81e2b-0ae0-454d-a8b3-c32dd1470ca5",
+      "target": "8f359a5e-e350-46c2-8aea-c7f4963c3020"
+    },
+    "f1e637a8-d31f-43fc-a57b-5507ed35b7a2": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "bd252169-8354-4033-97d9-9c1c16912216"
+    },
+    "f3c0e328-00a9-4ecc-a722-712276f9a9bd": {
+      "relation_type": "deployment_pod",
+      "source": "3e5cd1d8-e13b-41b3-be55-50e83b8a38b0",
+      "target": "57f5465a-2fab-4537-a41f-29b727835bd6"
+    },
+    "fae7935a-786a-4bdb-beea-5657e2fc2db6": {
+      "relation_type": "deployment_pod",
+      "source": "0dac095e-91e8-4daa-9732-41832db81d55",
+      "target": "3dcdd366-c24e-4f68-8672-a97e6f08f207"
+    },
+    "fe76b04c-75f3-4024-88e7-622119a1c737": {
+      "relation_type": "deployment_pod",
+      "source": "342f3956-d29f-402f-b699-1a3632d3126d",
+      "target": "7d5c88b4-3e28-4b56-92e1-85b7770d9e65"
+    }
+  },
+  "template": {
+    "namespace": [
+      "argocd",
+      "cert-manager",
+      "continuousc-dev",
+      "continuousc-k8-agent",
+      "cortex",
+      "crossplane-system",
+      "default",
+      "devspace",
+      "drone",
+      "gitea",
+      "kube-system",
+      "metallb-system",
+      "minio-operator",
+      "monitoring",
+      "openproject",
+      "tenant-a",
+      "tenant-b",
+      "tenant-dev",
+      "traefik",
+      "vault"
+    ],
+    "pod_name": [
+      "argo-cd-argocd-application-controller-0",
+      "argo-cd-argocd-application-controller-1",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-28p7z",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-2cfrw",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-2frhj",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-7jdpk",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-82jsx",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-94kln",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-cxc46",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-glzvp",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-gr5vk",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-j66nk",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-jtll8",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-m6lwr",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-mtgng",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-qrfc5",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-qvnfm",
+      "argo-cd-argocd-applicationset-controller-f5966cfc9-vhdsl",
+      "argo-cd-argocd-notifications-controller-649875ff54-222n6",
+      "argo-cd-argocd-notifications-controller-649875ff54-4q2zb",
+      "argo-cd-argocd-notifications-controller-649875ff54-68jsp",
+      "argo-cd-argocd-notifications-controller-649875ff54-8kr4n",
+      "argo-cd-argocd-notifications-controller-649875ff54-gdrdx",
+      "argo-cd-argocd-notifications-controller-649875ff54-gf2md",
+      "argo-cd-argocd-notifications-controller-649875ff54-grqzr",
+      "argo-cd-argocd-notifications-controller-649875ff54-jd8bs",
+      "argo-cd-argocd-notifications-controller-649875ff54-mqcc2",
+      "argo-cd-argocd-notifications-controller-649875ff54-phqj9",
+      "argo-cd-argocd-notifications-controller-649875ff54-qfjrn",
+      "argo-cd-argocd-notifications-controller-649875ff54-tr6db",
+      "argo-cd-argocd-notifications-controller-649875ff54-z9nr7",
+      "argo-cd-argocd-notifications-controller-649875ff54-zplx2",
+      "argo-cd-argocd-notifications-controller-649875ff54-zpsc6",
+      "argo-cd-argocd-notifications-controller-649875ff54-zzqzb",
+      "argo-cd-argocd-repo-server-564c9f45d-4psx6",
+      "argo-cd-argocd-repo-server-564c9f45d-7994m",
+      "argo-cd-argocd-repo-server-564c9f45d-8cjz6",
+      "argo-cd-argocd-repo-server-564c9f45d-dnbpj",
+      "argo-cd-argocd-repo-server-564c9f45d-drqjg",
+      "argo-cd-argocd-repo-server-564c9f45d-hh578",
+      "argo-cd-argocd-repo-server-564c9f45d-hlmpf",
+      "argo-cd-argocd-repo-server-564c9f45d-hqjxl",
+      "argo-cd-argocd-repo-server-564c9f45d-lpt2b",
+      "argo-cd-argocd-repo-server-564c9f45d-q5bzp",
+      "argo-cd-argocd-repo-server-564c9f45d-rt6jk",
+      "argo-cd-argocd-repo-server-564c9f45d-sghqx",
+      "argo-cd-argocd-repo-server-564c9f45d-thlrp",
+      "argo-cd-argocd-repo-server-564c9f45d-tmnr4",
+      "argo-cd-argocd-repo-server-564c9f45d-v7ctp",
+      "argo-cd-argocd-repo-server-564c9f45d-vd45k",
+      "argo-cd-argocd-repo-server-564c9f45d-vfhqc",
+      "argo-cd-argocd-repo-server-564c9f45d-w8455",
+      "argo-cd-argocd-repo-server-564c9f45d-xt6mt",
+      "argo-cd-argocd-server-69d7bcf956-4z9bk",
+      "argo-cd-argocd-server-69d7bcf956-57rv6",
+      "argo-cd-argocd-server-69d7bcf956-7djzs",
+      "argo-cd-argocd-server-69d7bcf956-86cjv",
+      "argo-cd-argocd-server-69d7bcf956-9s7dh",
+      "argo-cd-argocd-server-69d7bcf956-bbsf8",
+      "argo-cd-argocd-server-69d7bcf956-c52dz",
+      "argo-cd-argocd-server-69d7bcf956-g7fmn",
+      "argo-cd-argocd-server-69d7bcf956-j5sfl",
+      "argo-cd-argocd-server-69d7bcf956-m9xbv",
+      "argo-cd-argocd-server-69d7bcf956-nsg8p",
+      "argo-cd-argocd-server-69d7bcf956-p9hh8",
+      "argo-cd-argocd-server-69d7bcf956-q7fdq",
+      "argo-cd-argocd-server-69d7bcf956-sckh7",
+      "argo-cd-argocd-server-69d7bcf956-wsf8m",
+      "argo-cd-argocd-server-69d7bcf956-z56jr",
+      "argo-cd-redis-ha-haproxy-95df84bdd-2l7dr",
+      "argo-cd-redis-ha-haproxy-95df84bdd-2zpsq",
+      "argo-cd-redis-ha-haproxy-95df84bdd-4ml5m",
+      "argo-cd-redis-ha-haproxy-95df84bdd-5gc6g",
+      "argo-cd-redis-ha-haproxy-95df84bdd-5gdbs",
+      "argo-cd-redis-ha-haproxy-95df84bdd-6kmz2",
+      "argo-cd-redis-ha-haproxy-95df84bdd-7mrps",
+      "argo-cd-redis-ha-haproxy-95df84bdd-88kx7",
+      "argo-cd-redis-ha-haproxy-95df84bdd-8n2lh",
+      "argo-cd-redis-ha-haproxy-95df84bdd-bctr8",
+      "argo-cd-redis-ha-haproxy-95df84bdd-f72jn",
+      "argo-cd-redis-ha-haproxy-95df84bdd-jvtj2",
+      "argo-cd-redis-ha-haproxy-95df84bdd-mf246",
+      "argo-cd-redis-ha-haproxy-95df84bdd-mllnd",
+      "argo-cd-redis-ha-haproxy-95df84bdd-mmcbs",
+      "argo-cd-redis-ha-haproxy-95df84bdd-qpb7q",
+      "argo-cd-redis-ha-haproxy-95df84bdd-rhms9",
+      "argo-cd-redis-ha-haproxy-95df84bdd-vr6zt",
+      "argo-cd-redis-ha-haproxy-95df84bdd-w2l6z",
+      "argo-cd-redis-ha-haproxy-95df84bdd-w4n6w",
+      "argo-cd-redis-ha-haproxy-95df84bdd-w4wk5",
+      "argo-cd-redis-ha-server-0",
+      "argo-cd-redis-ha-server-1",
+      "argo-cd-redis-ha-server-2"
+    ],
+    "sts_name": [
+      "argo-cd-argocd-application-controller",
+      "argo-cd-argocd-applicationset-controller",
+      "argo-cd-argocd-notifications-controller",
+      "argo-cd-argocd-repo-server",
+      "argo-cd-argocd-server",
+      "argo-cd-redis-ha-haproxy",
+      "argo-cd-redis-ha-server"
+    ],
+    "svc_name": [
+      "argo-cd-argocd-application-controller-metrics",
+      "argo-cd-argocd-applicationset-controller",
+      "argo-cd-argocd-applicationset-controller-metrics",
+      "argo-cd-argocd-notifications-controller-metrics",
+      "argo-cd-argocd-repo-server",
+      "argo-cd-argocd-repo-server-metrics",
+      "argo-cd-argocd-server",
+      "argo-cd-argocd-server-metrics",
+      "argo-cd-redis-ha",
+      "argo-cd-redis-ha-announce-0",
+      "argo-cd-redis-ha-announce-1",
+      "argo-cd-redis-ha-announce-2",
+      "argo-cd-redis-ha-haproxy"
+    ]
+  }
+}

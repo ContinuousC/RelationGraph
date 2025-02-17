@@ -1,0 +1,170 @@
+{
+  "root": "cluster",
+  "elements": {
+    "cluster": {
+      "items": {
+	"match": {
+	  "item_type": {
+            "in": ["kubernetes/cluster"]
+	  },
+	  "properties": {
+            "kubernetes/name": {
+	      "string": {
+		"template": "cluster"
+              }
+	    }
+	  }
+        }
+      },
+      "follow": [
+        {
+          "relation": {
+	    "match": {
+	      "relation_type": {
+                "in": ["kubernetes/cluster-namespace"]
+              }
+	    }
+          },
+          "element": "namespace"
+        }
+      ]
+    },
+    "namespace": {
+      "items": {
+        "match": {
+	  "item_type": {
+            "in": ["kubernetes/namespace"]
+	  },
+	  "properties": {
+            "kubernetes/name": {
+	      "string": {
+		"template": "namespace"
+              }
+	    }
+	  }
+        }
+      },
+      "follow": [
+        {
+          "relation": {
+	    "match": {
+	      "relation_type": {
+                "in": [
+		  "kubernetes/namespace-stateful_set",
+		  "kubernetes/namespace-deployment",
+		  "kubernetes/namespace-daemon_set",
+		  "kubernetes/namespace-cron_job",
+		  "kubernetes/namespace-job"
+                ]
+              }
+	    }
+          },
+          "element": "pod_controller"
+        }
+      ]
+    },
+    "pod_controller": {
+      "items": {
+	"all": [
+	  {
+	    "match": {
+	      "item_type": {
+                "in": [
+		  "kubernetes/stateful_set",
+		  "kubernetes/deployment",
+		  "kubernetes/daemon_set",
+		  "kubernetes/cron_job",
+		  "kubernetes/job"
+                ]
+	      }
+	    }
+	  },
+	  {
+	    "match": {
+	      "item_type": {
+		"template": "controller_type"
+	      },
+	      "properties": {
+                "kubernetes/name": {
+		  "string": {
+		    "template": "pod_controller"
+		  }
+		}
+	      }
+	    }
+	  }
+	]
+      },
+      "follow": [
+        {
+          "relation": {
+	    "match": {
+              "relation_type": {
+                "in": [
+		  "kubernetes/stateful_set-pod",
+		  "kubernetes/deployment-pod",
+		  "kubernetes/daemon_set-pod",
+		  "kubernetes/cron_job-pod",
+		  "kubernetes/job-pod"
+                ]
+	      }
+            }
+          },
+          "element": "pod"
+        }
+      ]
+    },
+    "pod": {
+      "items": {
+	"match": {
+	  "item_type": {
+            "is": "kubernetes/pod"
+	  },
+	  "properties": {
+            "kubernetes/name": {
+	      "string": {
+                "template": "pod"
+              }
+	    }
+	  }
+        }
+      },
+      "follow": [
+        {
+          "relation": {
+	    "match": {
+	      "relation_type": {
+                "in": ["kubernetes/service-pod"]
+              }
+	    }
+          },
+          "element": "service"
+        }
+      ]
+    },
+    "service": {
+      "items": {
+        "match": {
+	  "item_type": {
+            "is": "kubernetes/service"
+	  },
+	  "properties": {
+            "kubernetes/name": {
+	      "string": {
+                "template": "service"
+              }
+	    }
+	  }
+        }
+      }
+    }
+  },
+  "template": {
+    "cluster": "strings",
+    "namespace": "strings",
+    "controller_type": "item_types",
+    "pod_controller": "strings",
+    "pod": "strings",
+    "service": "strings"
+  }
+}

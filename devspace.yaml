@@ -1,0 +1,92 @@
+################################################################################
+# Copyright ContinuousC. Licensed under the "Elastic License 2.0".             #
+################################################################################
+
+version: v2beta1
+name: relation-graph-engine
+
+pullSecrets:
+  gitea:
+    registry: gitea.contc
+
+vars:
+  SSH_KEYDIR:
+    source: env
+    default: ~/.ssh
+
+dev:
+  relation-graph-engine:
+    imageSelector: gitea.contc/continuousc/relation-graph-engine
+    devImage: gitea.contc/controlplane/rust-builder:0.2.0
+    workingDir: /root/source/RelationGraph
+    command:
+      - /usr/bin/ssh-agent
+      - /bin/bash
+      - -c
+      - |
+        cat > /root/.cargo/config.toml <<EOF
+        [registries]
+        si = { index = "ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry" }
+        [target.x86_64-unknown-linux-gnu]
+        rustflags = ["-C", "target-cpu=native", "-C", "link-arg=-fuse-ld=mold", "-C", "link-args=-L/usr/local/lib"]
+        EOF
+        ssh-add ~/.ssh/id_ed25519
+        /root/.cargo/bin/cargo watch -w /root/provisioned -w . -s 'while true; do cargo run --release --bin relation-graph-engine -- --bind 0.0.0.0:80 --db dbdaemon:9999 --certs /usr/share/continuousc/certs/relation-graph-engine-client --ca ca.crt --db-cert tls.crt --db-key tls.key --provisioned /root/provisioned --prometheus-tenant ${USER}-${TENANT} --app-version devspace; echo "Relation graph stopped... restarting in 10s"; sleep 10; done'
+    logs: {}
+    resources:
+      requests:
+        cpu: "0.3"
+        memory: 512Mi
+    env:
+      - name: CARGO_TERM_COLOR
+        value: always
+      - name: RUST_BACKTRACE
+        value: "1"
+      - name: RUST_LOG
+        value: debug
+      - name: OTEL_EXPORTER_OTLP_ENDPOINT
+        value: grpc://jaeger-collector:4317
+    sync:
+      - path: .:/root/source/RelationGraph
+        excludeFile: .gitignore
+        startContainer: true
+        disableDownload: true
+        printLogs: true
+      - path: ../Chart/provisioned:/root/provisioned
+        startContainer: true
+        disableDownload: true
+        printLogs: true
+      - path: ../PrometheusSchema:/root/source/PrometheusSchema
+        excludePaths:
+          - /.git
+          - /.devspace
+          - /.vscode
+          - /devspace.yaml
+          - /target
+          - "*~"
+        startContainer: true
+        disableDownload: true
+        printLogs: true
+      - path: ../JaegerAnomalyDetection:/root/source/JaegerAnomalyDetection
+        excludePaths:
+          - /.git
+          - /.devspace
+          - /.vscode
+          - /devspace.yaml
+          - /target
+          - "*~"
+        startContainer: true
+        disableDownload: true
+        printLogs: true
+      - path: ${SSH_KEYDIR}/id_ed25519:/root/.ssh/id_ed25519
+        startContainer: true
+        disableDownload: true
+        onUpload:
+          restartContainer: true
+    persistPaths:
+      - path: /root/.cargo/registry
+        volumePath: cargo-registry
+        skipPopulate: true
+      - path: /root/source/RelationGraph/target
+        volumePath: cargo-target
+        skipPopulate: true

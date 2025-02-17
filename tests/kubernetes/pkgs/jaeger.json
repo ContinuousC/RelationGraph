@@ -1,0 +1,280 @@
+{
+  "version": "0.1.0",
+  "requires": {
+    "kubernetes": "^0.1"
+  },
+  "prometheus_requires": {},
+  "items": {
+    "service": {
+      "name": {
+        "singular": "Service",
+        "plural": "Services"
+      },
+      "name_template": "{service_namespace}[/]{service_name}[ ]{service_instance_id}",
+      "keys": [
+        "service_namespace",
+        "service_name",
+        "service_instance_id"
+      ],
+      "properties": [
+        "service_namespace",
+        "service_name",
+        "service_instance_id",
+        "service_version",
+        "deployment_environment",
+        "k8s_cluster_name",
+        "k8s_cluster_uid",
+        "k8s_node_name",
+        "k8s_node_uid",
+        "k8s_namespace_name",
+        "k8s_pod_name",
+        "k8s_pod_uid",
+        "k8s_container_name",
+        "k8s_replicaset_name",
+        "k8s_replicaset_uid",
+        "k8s_deployment_name",
+        "k8s_deployment_uid",
+        "k8s_statefulset_name",
+        "k8s_statefulset_uid",
+        "k8s_daemonset_name",
+        "k8s_daemonset_uid",
+        "k8s_job_name",
+        "k8s_job_uid",
+        "k8s_cronjob_name",
+        "k8s_cronjob_uid"
+      ]
+    },
+    "operation": {
+      "name": {
+        "singular": "Operation",
+        "plural": "Operations"
+      },
+      "name_template": "{operation_name}",
+      "parents": [
+        "service"
+      ],
+      "keys": [
+        "operation_name"
+      ],
+      "properties": [
+        "operation_name"
+      ]
+    }
+  },
+  "relations": {
+    "service_invokes": {
+      "name": "Service Invokes",
+      "multiplicity": "one-to-one",
+      "bidirectional": true,
+      "source": "service",
+      "target": "service"
+    },
+    "operation_invokes": {
+      "name": "Operation Invokes",
+      "multiplicity": "one-to-one",
+      "bidirectional": true,
+      "source": "operation",
+      "target": "operation"
+    },
+    "runs_on_container": {
+      "name": "Runs on Container",
+      "multiplicity": "one-to-one",
+      "bidirectional": true,
+      "source": "service",
+      "target": "kubernetes/container",
+      "connector": {
+        "groups": {
+          "container": {
+            "rules": [
+              {
+                "template": {
+                  "podUid": "strings",
+                  "containerName": "strings"
+                },
+                "source": {
+		  "match": {
+                    "item_type": {
+                      "is": "service"
+                    },
+                    "properties": {
+                      "k8s_pod_uid": {
+			"string": {
+			  "template": "podUid"
+			}
+		      },
+                      "k8s_container_name": {
+			"string": {
+			  "template": "containerName"
+			}
+		      }
+		    }
+                  }
+                },
+                "target": {
+                  "match": {
+                    "item_type": {
+		      "is": "kubernetes/container"
+                    },
+                    "parent": {
+		      "match": {
+			"item_type": {
+			  "is": "kubernetes/pod"
+			},
+			"properties": {
+			  "kubernetes/uid": {
+			    "string": {
+			      "template": "podUid"
+			    }
+			  }
+			}
+		      }
+                    },
+                    "properties": {
+                      "kubernetes/name": {
+			"string": {
+			  "template": "containerName"
+			}
+		      }
+		    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "service_namespace": {
+      "name": "Service Namespace",
+      "description": "The namespace of the service",
+      "value": "string"
+    },
+    "service_name": {
+      "name": "Service Name",
+      "description": "The name of the service",
+      "value": "string"
+    },
+    "service_instance_id": {
+      "name": "Service Instance ID",
+      "description": "The instance id of the service",
+      "value": "string"
+    },
+    "service_version": {
+      "name": "Service Version",
+      "description": "The version of the service",
+      "value": "string"
+    },
+    "deployment_environment": {
+      "name": "Environment",
+      "description": "Name of the deployment environment.",
+      "value": "string"
+    },
+    "k8s_cluster_name": {
+      "name": "Kubernetes Cluster Name",
+      "description": "The name of the cluster.",
+      "value": "string"
+    },
+    "k8s_cluster_uid": {
+      "name": "Kubernetes Cluster UID",
+      "description": "A pseudo-ID for the cluster, set to the UID of the kube-system namespace.",
+      "value": "string"
+    },
+    "k8s_node_name": {
+      "name": "Kubernetes Node Name",
+      "description": "The name of the Node.",
+      "value": "string"
+    },
+    "k8s_node_uid": {
+      "name": "Kubernetes Node UID",
+      "description": "The UID of the Node.",
+      "value": "string"
+    },
+    "k8s_namespace_name": {
+      "name": "Kubernetes Namespace Name",
+      "description": "The name of the namespace that the pod is running in.",
+      "value": "string"
+    },
+    "k8s_pod_name": {
+      "name": "Kubernetes Pod Name",
+      "description": "The name of the Pod.",
+      "value": "string"
+    },
+    "k8s_pod_uid": {
+      "name": "Kubernetes Pod UID",
+      "description": "The UID of the Pod.",
+      "value": "string"
+    },
+    "k8s_container_name": {
+      "name": "Kubernetes Container Name",
+      "description": "The name of the Container from Pod specification, must be unique within a Pod.",
+      "value": "string"
+    },
+    "k8s_replicaset_name": {
+      "name": "Kubernetes ReplicaSet Name",
+      "description": "The name of the ReplicaSet.",
+      "value": "string"
+    },
+    "k8s_replicaset_uid": {
+      "name": "Kubernetes ReplicaSet UID",
+      "description": "The UID of the ReplicaSet.",
+      "value": "string"
+    },
+    "k8s_deployment_name": {
+      "name": "Kubernetes Deployment Name",
+      "description": "The name of the Deployment.",
+      "value": "string"
+    },
+    "k8s_deployment_uid": {
+      "name": "Kubernetes Deployment UID",
+      "description": "The UID of the Deployment.",
+      "value": "string"
+    },
+    "k8s_statefulset_name": {
+      "name": "Kubernetes StatefulSet Name",
+      "description": "The name of the StatefulSet.",
+      "value": "string"
+    },
+    "k8s_statefulset_uid": {
+      "name": "Kubernetes StatefulSet UID",
+      "description": "The UID of the StatefulSet.",
+      "value": "string"
+    },
+    "k8s_daemonset_name": {
+      "name": "Kubernetes DaemonSet Name",
+      "description": "The name of the DaemonSet.",
+      "value": "string"
+    },
+    "k8s_daemonset_uid": {
+      "name": "Kubernetes DaemonSet UID",
+      "description": "The UID of the DaemonSet.",
+      "value": "string"
+    },
+    "k8s_job_name": {
+      "name": "Kubernetes Job Name",
+      "description": "The name of the Job.",
+      "value": "string"
+    },
+    "k8s_job_uid": {
+      "name": "Kubernetes Job UID",
+      "description": "The UID of the Job.",
+      "value": "string"
+    },
+    "k8s_cronjob_name": {
+      "name": "Kubernetes CronJob Name",
+      "description": "The name of the CronJob.",
+      "value": "string"
+    },
+    "k8s_cronjob_uid": {
+      "name": "Kubernetes CronJob UID",
+      "description": "The UID of the CronJob.",
+      "value": "string"
+    },
+    "operation_name": {
+      "name": "Operation Name",
+      "description": "The name of the operation",
+      "value": "string"
+    }
+  }
+}

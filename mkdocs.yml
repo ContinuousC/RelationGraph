@@ -1,0 +1,22 @@
+site_name: "Relation Graph"
+
+nav:
+  - Overview: index.md
+  - Automation:
+      - Development: development.md
+      - Release: release.md
+      - Deployment: deploy.md
+  - Subprojects:
+      - Library: lib.md
+      - Engine: engine.md
+      - WebAssembly Library: wasm.md
+      - Command-Line Tool: cmd.md
+  - Topics:
+      - Data Model: data-model.md
+      - Transactions: transactions.md
+  - Rustdoc:
+      - Lib: rustdoc/lib.md
+      - WASM: rustdoc/wasm.md
+
+plugins:
+  - techdocs-core

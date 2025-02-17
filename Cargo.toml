@@ -1,0 +1,51 @@
+[workspace]
+resolver = "2"
+members = ["lib", "cmd", "wasm", "engine"]
+
+[profile.release]
+# lto = true
+#opt-level = 's'
+#opt-level = 'z'
+#debug = true
+
+[profile.dev]
+#strip = true
+
+[patch.crates-io]
+serde-wasm-bindgen = { registry = "si", version = "0.5" }
+apistos = { registry = "si", version = "0.2.5" }
+schemars = { registry = "si", version = "0.8.22" }
+actix-web = { git = "ssh://git@sigit01/~/Development/ContinuousC/Actix-Web", rev = "a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20" }
+actix-router = { git = "ssh://git@sigit01/~/Development/ContinuousC/Actix-Web", rev = "a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20" }
+
+# tsify = { registry = "si", version = "=0.4.6-si" }
+# tsify-macros = { registry = "si", version = "=0.4.6-si" }
+# serde_json = { path = "json" }
+
+[patch.si]
+# rpc = { path = "../../../Rpc/Source/Rust/rpc" }
+# dbschema = { path = "../../../DBSchema/Source/Rust/dbschema" }
+# dbschema-derive = { path = "../../../DBSchema/Source/Rust/dbschema-derive" }
+
+# prometheus-core = { path = "../PrometheusSchema/core" }
+# prometheus-api = { path = "../PrometheusSchema/api" }
+# prometheus-expr = { path = "../PrometheusSchema/expr" }
+# prometheus-schema = { path = "../PrometheusSchema/schema" }
+
+# jaeger-anomaly-detection = { path = "../JaegerAnomalyDetection/lib" }
+
+# tsify = { path = "../../tsify" }
+# tsify-macros = { path = "../../tsify/tsify-macros" }
+tsify = { git = "ssh://git@sigit01/~/Development/ContinuousC/Tsify" }
+tsify-macros = { git = "ssh://git@sigit01/~/Development/ContinuousC/Tsify" }
+
+relation-graph = { path = "lib" }
+
+# rpc = { git = "ssh://git@sigit01/~/Development/ContinuousC/Rpc", rev = "27a6ee3cba7f8a56881a41e710e61468007a13e6" }
+# rpc_derive = { git = "ssh://git@sigit01/~/Development/ContinuousC/Rpc", rev = "27a6ee3cba7f8a56881a41e710e61468007a13e6" }
+
+# dbschema = { git = "ssh://git@sigit01/~/Development/ContinuousC/DBSchema", rev = "f2b850c6dda5bea18ab25af15bc7c9a4a423f5d3" }
+# dbschema-derive = { git = "ssh://git@sigit01/~/Development/ContinuousC/DBSchema", rev = "f2b850c6dda5bea18ab25af15bc7c9a4a423f5d3" }
+# dbschema-elastic = { git = "ssh://git@sigit01/~/Development/ContinuousC/DBSchema", rev = "f2b850c6dda5bea18ab25af15bc7c9a4a423f5d3" }
+
+# dbdaemon-api = { git = "ssh://git@sigit01/~/Development/ContinuousC/DBDaemon", rev = "3f57c12cd02427f12987838058c4b0c0bd69622c" }

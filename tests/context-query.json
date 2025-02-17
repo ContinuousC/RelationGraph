@@ -1,0 +1,35 @@
+{
+  "root": "item",
+  "elements": {
+    "item": {
+      "items": {
+	"item_id": {
+	  "template": "item"
+	}
+      },
+      "follow": [{
+	"relation": {
+	  "relation_type": {
+	    "template": "relation_type"
+	  }
+	},
+	"element": "step"
+      }]
+    },
+    "step": {
+      "items": {
+	"item_type": {
+	  "template": "item_type"
+	}
+      }
+    }
+  },
+  "template": {
+    "item": "item_ids",
+    "item_type": "item_types",
+    "relation_type": "relation_types"
+  },
+  "filters": {
+    "item": ["0011e320-88f1-400d-ab5c-bff187c40bca"]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "version": "0.1.0",
+  "requires": {
+    "builtin": "0.1"
+  },
+  "items": {
+    "router": {
+      "name": {
+        "singular": "router",
+        "plural": "routers"
+      },
+      "implements": ["builtin/host"],
+      "properties": ["vendor", "gateway"]
+    },
+    "switch": {
+      "name": {
+        "singular": "switch",
+        "plural": "switches"
+      },
+      "implements": ["builtin/host"],
+      "properties": ["vendor"]
+    },
+    "interface": {
+      "name": {
+        "singular": "interface",
+        "plural": "interfaces"
+      },
+      "implements": ["builtin/interface"],
+      "parents": ["router", "switch"],
+      "keys": ["ifIndex"],
+      "properties": ["ifIndex", "ifDescr", "ifName", "ifAlias", "remote_ip"]
+    }
+  },
+  "properties": {
+    "vendor": {
+      "name": "vendor",
+      "description": "The vendor as reported through SNMP",
+      "value": "string"
+    },
+    "ifDescr": {
+      "name": "description",
+      "description": "The interface description",
+      "value": "string"
+    },
+    "ifName": {
+      "name": "name",
+      "description": "The interface name",
+      "value": "string"
+    },
+    "ifAlias": {
+      "name": "alias",
+      "description": "The interface alias",
+      "value": "string"
+    },
+    "ifIndex": {
+      "name": "index",
+      "description": "The interface index",
+      "value": "integer"
+    },
+    "remote_ip": {
+      "name": "remote ip",
+      "description": "The ip address on the other side of the link",
+      "value": "string"
+    },
+    "gateway": {
+      "name": "gateway",
+      "description": "The default gateway address",
+      "value": "string"
+    }
+  },
+  "relations": {
+    "layer2": {
+      "name": "layer 2 link",
+      "multiplicity": "one-to-one",
+      "bidirectional": true,
+      "source": "interface",
+      "target": "interface",
+      "source_keys": ["remote_ip"],
+      "target_keys": ["builtin/ip_address"]
+    },
+    "layer3": {
+      "name": "layer 3 link",
+      "multiplicity": "one-to-one",
+      "source": "router",
+      "target": "interface",
+      "source_keys": ["gateway"],
+      "target_keys": ["builtin/ip_address"]
+    }
+  }
+}

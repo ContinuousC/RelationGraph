@@ -1,0 +1,62 @@
+{
+  "version": "0.1.0",
+  "items": {
+    "host": {
+      "name": {
+        "singular": "host",
+        "plural": "hosts"
+      },
+      "keys": ["hostname"],
+      "properties": ["hostname", "tags"]
+    },
+    "interface": {
+      "name": {
+        "singular": "interface",
+        "plural": "interfaces"
+      },
+      "parents": ["host"],
+      "keys": ["ip_address"],
+      "properties": ["ip_address"]
+    },
+    "ipv4": {
+      "name": {
+        "singular": "ip address",
+        "plural": "ip addresses"
+      },
+      "keys": ["ip_address"],
+      "properties": ["ip_address", "dnsname"]
+    }
+  },
+  "properties": {
+    "hostname": {
+      "name": "hostname",
+      "description": "The FQDN as configured on the host",
+      "value": "string"
+    },
+    "dnsname": {
+      "name": "dnsname",
+      "description": "The FQDN as given by DNS",
+      "value": "string"
+    },
+    "ip_address": {
+      "name": "ip address",
+      "description": "The ip address",
+      "value": "string"
+    },
+    "tags": {
+      "name": "tags",
+      "description": "Tags assigned to the host",
+      "value": { "map": "string" }
+    }
+  },
+  "relations": {
+    "host_ipv4": {
+      "name": "host ipv4 address",
+      "multiplicity": "one-to-one",
+      "source": "interface",
+      "target": "ipv4",
+      "source_keys": ["ip_address"],
+      "target_keys": ["ip_address"]
+    }
+  }
+}

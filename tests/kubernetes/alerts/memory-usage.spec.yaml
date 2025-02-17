@@ -1,0 +1,18 @@
+################################################################################
+# Copyright ContinuousC. Licensed under the "Elastic License 2.0".             #
+################################################################################
+
+alert: PodHighMemoryUsage
+item: kubelet-metrics-cadvisor:endpoint-id-instance-job-metrics_path-namespace-node-pod-service
+expr: container_memory_working_set_bytes > $min
+params: {}
+thresholds:
+  min:
+    type: float
+    default:
+      warning: 1073741824
+labels: {}
+annotations:
+   description: 
+   runbook_url: 
+   summary: "pod {{ $labels.namespace }} : {{ $labels.pod }} has high memory usage"

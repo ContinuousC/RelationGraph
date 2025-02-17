@@ -1,0 +1,3 @@
+[submodule "prometheus-schema"]
+	path = prometheus-schema
+	url = ../PrometheusSchema

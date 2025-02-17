@@ -1,0 +1,20 @@
+################################################################################
+# Copyright ContinuousC. Licensed under the "Elastic License 2.0".             #
+################################################################################
+
+alert: PodHighCPUUsage
+item: kubelet-metrics-cadvisor:endpoint-id-instance-job-metrics_path-namespace-node-pod-service
+expr: rate(container_cpu_usage_seconds_total[5m]) > $min
+params: {}
+thresholds:
+  min:
+    type: float
+    default:
+      warning: .95
+      critical: .98
+for: 15m
+labels: {}
+annotations:
+   description: 
+   runbook_url: 
+   summary: "pod {{ $labels.namespace }} : {{ $labels.pod }} has high cpu usage"

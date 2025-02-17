@@ -1,0 +1,26 @@
+################################################################################
+# Copyright ContinuousC. Licensed under the "Elastic License 2.0".             #
+################################################################################
+
+prometheus:
+  instance: worst
+  selectors:
+    pod: !eq prometheus-monitoring-kube-prometheus-prometheus-0
+  params: {}
+  thresholds:
+    warning:
+      min: 6442450944
+    critical:
+      min: 8589934592
+  labels: {}
+other:
+  instance: worst
+  selectors:
+    pod: !ne prometheus-monitoring-kube-prometheus-prometheus-0
+  params: {}
+  thresholds:
+    warning:
+      min: 1073741824
+    critical:
+      min: 2147483648
+  labels: {}

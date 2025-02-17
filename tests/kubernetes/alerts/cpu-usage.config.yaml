@@ -1,0 +1,26 @@
+################################################################################
+# Copyright ContinuousC. Licensed under the "Elastic License 2.0".             #
+################################################################################
+
+cortex:
+  instance: worst
+  selectors:
+    namespace: !eq cortex
+  params: {}
+  thresholds:
+    warning:
+      min: .3
+    critical:
+      min: .7
+  labels: {}
+other:
+  instance: worst
+  selectors:
+    namespace: !ne cortex
+  params: {}
+  thresholds:
+    warning:
+      min: .2
+    critical:
+      min: .5
+  labels: {}

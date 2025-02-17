@@ -1,0 +1,121 @@
+api: 0.1.12
+workspaces:
+  relation-graph:
+    type: cargo
+    root: .
+    pre_commit:
+      - run: cargo update -w && cargo update prometheus-core prometheus-api prometheus-expr prometheus-schema jaeger-anomaly-detection
+        files:
+          - Cargo.lock
+      - run: cargo run --bin relation-graph-engine -- --spec --app-version undefined > openapi.json
+        files:
+          - openapi.json
+artifacts:
+  relation-graph-engine:
+    type: docker
+    pre_tag:
+      - working_dir: repo
+        run: |
+          docker image rm relation-graph-engine;
+          DOCKER_BUILDKIT=1 docker build --ssh default --target engine-release -t relation-graph-engine:$VC_ARTIFACT_VERSION .
+          docker tag relation-graph-engine:$VC_ARTIFACT_VERSION gitea.contc/continuousc/relation-graph-engine:$VC_ARTIFACT_VERSION
+          docker push gitea.contc/continuousc/relation-graph-engine:$VC_ARTIFACT_VERSION
+    source:
+      type: cargo
+      workspace: relation-graph
+      root: engine
+      paths:
+        - Dockerfile
+        - Cargo.toml
+      #  - Cargo.lock
+        - provisioned
+      dependencies:
+        - name: relation-graph
+          artifact: relation-graph
+        - name: dbdaemon-api
+          artifact: dbdaemon-api
+        - name: dbdaemon-types
+          artifact: dbdaemon-types
+        - name: prometheus-core
+          artifact: prometheus-core
+        - name: prometheus-api
+          artifact: prometheus-api
+        - name: prometheus-expr
+          artifact: prometheus-expr
+        - name: prometheus-schema
+          artifact: prometheus-schema
+  relation-graph-cmd:
+    type: cargo
+    pre_tag:
+      - run: cargo publish --registry si
+    source:
+      type: cargo
+      workspace: relation-graph
+      root: cmd
+      paths:
+        - Cargo.toml
+        # - Cargo.lock
+      dependencies:
+        - name: relation-graph
+          artifact: relation-graph
+        - name: prometheus-core
+          artifact: prometheus-core
+        - name: prometheus-api
+          artifact: prometheus-api
+        - name: prometheus-expr
+          artifact: prometheus-expr
+        - name: prometheus-schema
+          artifact: prometheus-schema
+  relation-graph-wasm:
+    type: npm
+    pre_tag:
+      - working_dir: repo
+        # run: |
+        #   # DOCKER_BUILDKIT=1 docker build --ssh default --target publish-wasm --build-arg WASM_TAG=$VC_ARTIFACT_VERSION .
+        run: |
+          wasm-pack build wasm -d pkg --target web --release --reference-types --weak-refs &&
+          cd wasm/pkg &&
+          jq '. + {"name": "@continuousc/relation-graph", "publishConfig": {"registry": "https://gitea.contc/api/packages/continuousc/npm/"}}' package.json > package2.json &&
+          mv package2.json package.json && npm publish
+    source:
+      type: cargo
+      workspace: relation-graph
+      root: wasm
+      paths:
+        - Cargo.toml
+        # - Cargo.lock
+      dependencies:
+        - name: relation-graph
+          artifact: relation-graph
+        - name: prometheus-core
+          artifact: prometheus-core
+        - name: prometheus-api
+          artifact: prometheus-api
+        - name: prometheus-expr
+          artifact: prometheus-expr
+        - name: prometheus-schema
+          artifact: prometheus-schema
+        - name: jaeger-anomaly-detection
+          artifact: jaeger-anomaly-detection
+  relation-graph:
+    type: cargo
+    pre_tag:
+      - run: cargo publish --registry si
+    source:
+      type: cargo
+      workspace: relation-graph
+      root: lib
+      paths:
+        - Cargo.toml
+        # - Cargo.lock
+      dependencies:
+        - name: prometheus-core
+          artifact: prometheus-core
+        - name: prometheus-api
+          artifact: prometheus-api
+        - name: prometheus-expr
+          artifact: prometheus-expr
+        - name: prometheus-schema
+          artifact: prometheus-schema
+        - name: jaeger-anomaly-detection
+          artifact: jaeger-anomaly-detection

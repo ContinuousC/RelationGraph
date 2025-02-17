@@ -1,0 +1,324 @@
+kind: pipeline
+type: docker
+name: relation-graph
+
+# TODO: fix this in drone installation
+clone:
+  skip_verify: true
+
+environment:
+  DOCKER_HOST: unix:///var/run/docker.sock
+  BUILDKIT_NO_CLIENT_TOKEN: 1
+  DOCKER_BUILDKIT: 1
+
+steps:
+
+  - name: builder
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      repo: relation-graph-source
+      target: source
+
+  - name: test
+    depends_on:
+      - builder
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: relation-graph-test
+      target: test
+
+  - name: audit
+    depends_on:
+      - builder
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: relation-graph-audit
+      target: audit
+
+  - name: build-image-dev
+    when:
+      ref:
+        - refs/tags/relation-graph-engine_v*
+        - refs/heads/main
+    depends_on:
+      - test
+      - audit
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: relation-graph-engine-dev
+      target: engine-dev
+
+  - name: build-image-release
+    when:
+      ref:
+        - refs/tags/relation-graph-engine_v*
+        - refs/heads/demo
+    depends_on:
+      - test
+      - audit
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: relation-graph-engine
+      target: engine-release
+
+  - name: build-wasm
+    when:
+      ref:
+        - refs/tags/relation-graph-wasm_v*
+        - refs/heads/main
+        - refs/heads/demo
+    depends_on:
+      - test
+      - audit
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: relation-graph-wasm
+      target: build-wasm-release
+
+  - name: build-techdocs
+    when:
+      ref:
+        - refs/heads/main
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      repo: relation-graph-techdocs
+      target: build-techdocs
+
+  - name: build-rustdocs
+    when:
+      ref:
+        - refs/heads/main
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: relation-graph-rustdocs
+      target: build-rustdocs
+
+  - name: push-image-dev
+    when:
+      ref:
+        - refs/heads/main
+    depends_on:
+      - build-image-dev
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      registry: gitea.contc
+      username: ci
+      password:
+        from_secret: gitea-docker-registry-password
+      tags:
+        - dev-latest
+      force_tag: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: gitea.contc/continuousc/relation-graph-engine
+      target: engine-dev
+      cache_from:
+        - relation-graph-engine-dev
+
+  - name: push-image-demo
+    when:
+      ref:
+        - refs/heads/demo
+    depends_on:
+      - build-image-release
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      registry: gitea.contc
+      username: ci
+      password:
+        from_secret: gitea-docker-registry-password
+      tags:
+        - latest
+      force_tag: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: gitea.contc/continuousc/relation-graph-engine
+      target: engine-release
+      cache_from:
+        - relation-graph-engine
+
+  - name: push-image-tagged-dev
+    when:
+      ref:
+        - refs/tags/relation-graph-engine_v*
+    depends_on:
+      - build-image-dev
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      registry: gitea.contc
+      username: ci
+      password:
+        from_secret: gitea-docker-registry-password
+      tags:
+        - dev-latest
+        - dev-${DRONE_TAG#relation-graph-engine_v}
+      force_tag: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: gitea.contc/continuousc/relation-graph-engine
+      target: engine-dev
+      cache_from:
+        - relation-graph-engine-dev
+
+  - name: push-image-tagged-release
+    when:
+      ref:
+        - refs/tags/relation-graph-engine_v*
+    depends_on:
+      - build-image-release
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      registry: gitea.contc
+      username: ci
+      password:
+        from_secret: gitea-docker-registry-password
+      tags:
+        - latest
+        - ${DRONE_TAG#relation-graph-engine_v}
+      force_tag: true
+      ssh_agent_key:
+        from_secret: drone-ssh-key
+      repo: gitea.contc/continuousc/relation-graph-engine
+      target: engine-release
+      cache_from:
+        - relation-graph-engine
+
+  - name: push-wasm-tagged
+    depends_on:
+      - build-wasm
+    when:
+      ref:
+        - refs/tags/relation-graph-wasm_v*
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    environment:
+      NPMRC:
+        from_secret: npmrc
+    settings:
+      daemon_off: true
+      dry_run: true
+      repo: relation-graph-publish-wasm
+      target: publish-wasm
+      secret: id=npmrc,env=NPMRC
+      build_args:
+        - WASM_TAG=${DRONE_TAG#relation-graph-wasm_v}
+
+  - name: publish-techdocs
+    when:
+      ref:
+        - refs/heads/main
+    depends_on:
+      - build-techdocs
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    environment:
+      MINIO_CREDENTIALS:
+        from_secret: MINIO_CREDENTIALS
+    settings:
+      daemon_off: true
+      dry_run: true
+      repo: relation-graph-publish-techdocs
+      target: publish-techdocs
+      secrets_from_env:
+        - minio_credentials=MINIO_CREDENTIALS
+
+  - name: publish-rustdocs
+    when:
+      ref:
+        - refs/heads/main
+    depends_on:
+      - build-rustdocs
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    environment:
+      MINIO_CONFIG:
+        from_secret: minio-config
+      CONTC_CA:
+        from_secret: contc-ca
+    settings:
+      daemon_off: true
+      dry_run: true
+      repo: relation-graph-publish-rustdocs
+      target: publish-rustdocs
+      secrets_from_env:
+        - minio-config=MINIO_CONFIG
+        - contc-ca=CONTC_CA
+        
+volumes:
+  - name: dockerd
+    host:
+      path: /var/run/docker.sock

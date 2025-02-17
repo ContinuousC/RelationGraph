@@ -1,0 +1,1109 @@
+{
+  "sources": {
+    "kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+      "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+        "path": "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service",
+        "labels": {
+          "endpoint": "https-metrics",
+          "instance": "192.168.10.102:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics",
+          "namespace": "kube-system",
+          "node": "k3s-2",
+          "service": "monitoring-kube-prometheus-kubelet"
+        }
+      },
+      "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+        "path": "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service",
+        "labels": {
+          "endpoint": "https-metrics",
+          "instance": "192.168.10.102:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics",
+          "namespace": "kube-system",
+          "node": "k3s-2",
+          "service": "monitoring-tools-kube-prom-kubelet"
+        }
+      }
+    }
+  },
+  "metrics": {
+    "kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+      "labels": {
+        "node": "k3s-2"
+      },
+      "metrics": {
+        "apiserver_audit_event_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "apiserver_audit_requests_rejected_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "apiserver_envelope_encryption_dek_cache_fill_percent": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "apiserver_flowcontrol_seat_fair_frac": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "2.3333333333333335"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "2.3333333333333335"
+          }
+        },
+        "apiserver_kube_aggregator_x509_insecure_sha1_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "apiserver_kube_aggregator_x509_missing_san_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "apiserver_storage_data_key_generation_failures_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "apiserver_storage_db_total_size_in_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "43802624"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "43802624"
+          }
+        },
+        "apiserver_storage_envelope_transformation_cache_misses_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "apiserver_tls_handshake_errors_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "apiserver_webhooks_x509_insecure_sha1_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "apiserver_webhooks_x509_missing_san_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "disabled_metric_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "go_cgo_go_to_c_calls_calls_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "42"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "42"
+          }
+        },
+        "go_gc_cycles_automatic_gc_cycles_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "14778"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "14777"
+          }
+        },
+        "go_gc_cycles_forced_gc_cycles_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "go_gc_cycles_total_gc_cycles_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "14778"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "14777"
+          }
+        },
+        "go_gc_duration_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0.010434388"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0.010434388"
+          }
+        },
+        "go_gc_heap_allocs_bytes_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "7397146895032"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "7396620183904"
+          }
+        },
+        "go_gc_heap_allocs_objects_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "54208237732"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "54203261713"
+          }
+        },
+        "go_gc_heap_frees_bytes_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "7396561201688"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "7395994933504"
+          }
+        },
+        "go_gc_heap_frees_objects_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "54205040937"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "54199777333"
+          }
+        },
+        "go_gc_heap_goal_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1144877288"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1142422128"
+          }
+        },
+        "go_gc_heap_objects_objects": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3196795"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3484380"
+          }
+        },
+        "go_gc_heap_tiny_allocs_objects_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "5463455923"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "5462972818"
+          }
+        },
+        "go_gc_limiter_last_enabled_gc_cycle": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "go_gc_stack_starting_size_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "4096"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "4096"
+          }
+        },
+        "go_goroutines": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3829"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3830"
+          }
+        },
+        "go_memory_classes_heap_free_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "293208064"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "267296768"
+          }
+        },
+        "go_memory_classes_heap_objects_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "585693344"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "625250400"
+          }
+        },
+        "go_memory_classes_heap_released_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "367878144"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "382255104"
+          }
+        },
+        "go_memory_classes_heap_stacks_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "29753344"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "31391744"
+          }
+        },
+        "go_memory_classes_heap_unused_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "396994400"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "367333280"
+          }
+        },
+        "go_memory_classes_metadata_mcache_free_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "10800"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "10800"
+          }
+        },
+        "go_memory_classes_metadata_mcache_inuse_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "4800"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "4800"
+          }
+        },
+        "go_memory_classes_metadata_mspan_free_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "10794240"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "10809216"
+          }
+        },
+        "go_memory_classes_metadata_mspan_inuse_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "14590080"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "14575104"
+          }
+        },
+        "go_memory_classes_metadata_other_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "71764104"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "71764104"
+          }
+        },
+        "go_memory_classes_os_stacks_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "go_memory_classes_other_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3713032"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3715680"
+          }
+        },
+        "go_memory_classes_profiling_buckets_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "31274120"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "31271472"
+          }
+        },
+        "go_memory_classes_total_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1805678472"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1805678472"
+          }
+        },
+        "go_memstats_alloc_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "585693344"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "625250400"
+          }
+        },
+        "go_memstats_alloc_bytes_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "7397146895032"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "7396620183904"
+          }
+        },
+        "go_memstats_buck_hash_sys_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "31274120"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "31271472"
+          }
+        },
+        "go_memstats_frees_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "59668496860"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "59662750151"
+          }
+        },
+        "go_memstats_gc_sys_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "71764104"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "71764104"
+          }
+        },
+        "go_memstats_heap_alloc_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "585693344"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "625250400"
+          }
+        },
+        "go_memstats_heap_idle_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "661086208"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "649551872"
+          }
+        },
+        "go_memstats_heap_inuse_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "982687744"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "992583680"
+          }
+        },
+        "go_memstats_heap_objects": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3196795"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3484380"
+          }
+        },
+        "go_memstats_heap_released_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "367878144"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "382255104"
+          }
+        },
+        "go_memstats_heap_sys_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1643773952"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1642135552"
+          }
+        },
+        "go_memstats_last_gc_time_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1698142451.425153"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1698142391.249914"
+          }
+        },
+        "go_memstats_lookups_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "go_memstats_mallocs_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "59671693655"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "59666234531"
+          }
+        },
+        "go_memstats_mcache_inuse_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "4800"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "4800"
+          }
+        },
+        "go_memstats_mcache_sys_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "15600"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "15600"
+          }
+        },
+        "go_memstats_mspan_inuse_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "14590080"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "14575104"
+          }
+        },
+        "go_memstats_mspan_sys_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "25384320"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "25384320"
+          }
+        },
+        "go_memstats_next_gc_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1144877288"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1142422128"
+          }
+        },
+        "go_memstats_other_sys_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3713032"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3715680"
+          }
+        },
+        "go_memstats_stack_inuse_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "29753344"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "31391744"
+          }
+        },
+        "go_memstats_stack_sys_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "29753344"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "31391744"
+          }
+        },
+        "go_memstats_sys_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1805678472"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1805678472"
+          }
+        },
+        "go_sched_gomaxprocs_threads": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "4"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "4"
+          }
+        },
+        "go_sched_goroutines_goroutines": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3829"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "3830"
+          }
+        },
+        "go_threads": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "44"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "44"
+          }
+        },
+        "hidden_metric_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "2"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "2"
+          }
+        },
+        "kube_apiserver_pod_logs_pods_logs_backend_tls_failure_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubelet_cpu_manager_pinning_errors_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubelet_cpu_manager_pinning_requests_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubelet_graceful_shutdown_end_time_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubelet_graceful_shutdown_start_time_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubelet_lifecycle_handler_http_fallbacks_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubelet_managed_ephemeral_containers": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubelet_node_name": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1"
+          }
+        },
+        "kubelet_pleg_discard_events": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubelet_pleg_last_seen_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1698142453"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1698142398"
+          }
+        },
+        "kubelet_running_pods": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "38"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "38"
+          }
+        },
+        "kubelet_started_pods_errors_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubelet_started_pods_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "144"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "144"
+          }
+        },
+        "kubeproxy_sync_proxy_rules_endpoint_changes_pending": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubeproxy_sync_proxy_rules_endpoint_changes_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "77228"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "77228"
+          }
+        },
+        "kubeproxy_sync_proxy_rules_iptables_partial_restore_failures_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubeproxy_sync_proxy_rules_iptables_restore_failures_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubeproxy_sync_proxy_rules_last_queued_timestamp_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1698142450.2098713"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1698142450.2098713"
+          }
+        },
+        "kubeproxy_sync_proxy_rules_last_timestamp_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1698142450.437218"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1698142450.437218"
+          }
+        },
+        "kubeproxy_sync_proxy_rules_service_changes_pending": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "kubeproxy_sync_proxy_rules_service_changes_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "202368"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "202368"
+          }
+        },
+        "process_cpu_seconds_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "76955.64"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "76956.26"
+          }
+        },
+        "process_max_fds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1000000"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1000000"
+          }
+        },
+        "process_open_fds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "293"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "292"
+          }
+        },
+        "process_resident_memory_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1559269376"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1559269376"
+          }
+        },
+        "process_start_time_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1697543427.79"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1697543427.79"
+          }
+        },
+        "process_virtual_memory_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "13337997312"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "13337997312"
+          }
+        },
+        "process_virtual_memory_max_bytes": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "18446744073709552000"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "18446744073709552000"
+          }
+        },
+        "rest_client_exec_plugin_ttl_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "+Inf"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "+Inf"
+          }
+        },
+        "scheduler_preemption_attempts_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "scrape_duration_seconds": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0.347032677"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0.342035447"
+          }
+        },
+        "scrape_samples_post_metric_relabeling": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "23721"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "23721"
+          }
+        },
+        "scrape_samples_scraped": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "23721"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "23721"
+          }
+        },
+        "scrape_series_added": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "serviceaccount_legacy_tokens_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "0"
+          }
+        },
+        "serviceaccount_stale_tokens_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1"
+          }
+        },
+        "serviceaccount_valid_tokens_total": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "107467"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "107468"
+          }
+        },
+        "up": {
+          "/root:root/root:monitoring-kube-prometheus-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1"
+          },
+          "/root:root/root:monitoring-tools-kube-prom-kubelet/kubelet:root/kubelet:metrics/kubelet-metrics:root/kubelet-metrics:endpoint-instance-job-metrics_path-namespace-node-service": {
+            "labels": {},
+            "value": "1"
+          }
+        }
+      }
+    }
+  }
+}

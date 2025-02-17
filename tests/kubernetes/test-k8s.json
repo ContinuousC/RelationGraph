@@ -1,0 +1,61 @@
+{
+    "root": "cluster",
+    "elements": {
+	"cluster": {
+	    "items": { "match": {
+		"item_type": { "is": "kubernetes/cluster" },
+		"properties": { "match": {
+		    "kubernetes/name": { "template": "cluster" }
+		}}
+	    }},
+	    "retrieve": ["kubernetes/name"],
+	    "follow": [{
+		"relation": "kubernetes/manages",
+		"element": "resource"
+	    }]
+	},
+	"resource": {
+	    "items": { "match": {
+		"item_type": { "is": "kubernetes/cr" },
+		"properties": { "match": {
+		    "kubernetes/kind": { "all": [{ "in": ["deployment", "statefulset", "pod"] },
+						 { "template": "kind" }] },
+		    "kubernetes/name": { "template": "name" }
+		}},
+		"relations": {
+		    "kubernetes/resource": {
+			"kubernetes/namespace": {
+			    "properties": {
+				"kubernetes/name": { "template": "namespace" }
+			    }
+			}
+		    },
+		}
+	    }},
+	    "follow": [{
+		"relation": "kubernetes/manages",
+		"element": "resource"
+	    }]
+	}
+    },
+    "template": {
+	"cluster": "values",
+	"namespace": "values",
+	"kind": "values",
+	"name": "values",
+    },
+    "filters": {
+	"cluster": "c1"
+    }
+}
+
+
+{
+    "nodes": {...},
+    "template": {
+	"cluster": [...],
+	"namespace": ["argocd", "prom"],
+	"kind": [ "deployment", "statefulset" ],
+	"name": [...]
+    }
+}

@@ -1,0 +1,30 @@
+################################################################################
+# Copyright ContinuousC. Licensed under the "Elastic License 2.0".             #
+################################################################################
+
+production:
+  instance: !individual
+  labels: {}
+  selectors:
+    environment: !eq prod
+  params: {}
+  thresholds:
+    minor:
+      expiry: 100
+    warning:
+      expiry: 90
+    critical:
+      expiry: 80
+    major:
+      expiry: 70
+development:
+  instance: !combined
+  labels: {}
+  selectors:
+    environment: !eq dev
+  params: {}
+  thresholds:
+    warning:
+      expiry: 864000
+    critical:
+      expiry: 86400

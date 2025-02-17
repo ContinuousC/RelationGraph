@@ -1,0 +1,90 @@
+[package]
+name = "relation-graph"
+description = "ContinuousC backend (shared components)"
+version = "0.1.4-acc.48"
+authors = [
+    "Maarten Deprez <mdp@continuousc.eu>",
+    "André Bongima <abo@continuousc.eu>",
+]
+repository = "https://github.com/ContinuousC/RelationGraph.git"
+license = "Elastic-2.0"
+edition = "2021"
+publish = false
+
+[features]
+tsify = [
+    "dep:tsify",
+    "dep:wasm-bindgen",
+    "prometheus-schema/tsify",
+    "jaeger-anomaly-detection/tsify",
+    "unit/tsify",
+]
+apistos = ["dep:apistos", "schemars"]
+schemars = [
+    "dep:schemars",
+    "dbschema/schemars",
+    "prometheus-schema/schemars",
+    "prometheus-expr/schemars",
+    "jaeger-anomaly-detection/schemars",
+    "value/schemars",
+]
+optimize-for-size = []
+tokio = ["dep:tokio", "dep:tokio-stream"]
+
+[dependencies]
+serde = { version = "1.0.175", features = ["derive"] }
+semver = { version = "1.0.20", features = ["serde"] }
+uuid = { version = "1.4.1", features = ["v4", "serde", "js"] }
+tsify = { registry = "si", version = "0.4.6", optional = true }
+wasm-bindgen = { version = "0.2", optional = true }
+serde_with = "3.1.0"
+serde_json = { version = "1.0.103", features = ["raw_value"] }
+thiserror = "1.0.44"
+log = "0.4.20"
+itertools = "0.13"
+nom = "7.1.3"
+ordered-float = "4.1.1"
+chrono = "0.4.31"
+schemars = { version = "0.8", features = ["chrono", "uuid1"], optional = true }
+apistos = { version = "0.2.4", optional = true }
+tokio = { version = "1.39.2", features = ["fs"], optional = true }
+tokio-stream = { version = "0.1.15", features = ["fs"], optional = true }
+ambassador = "0.4.1"
+replace_with = "0.1.7"
+bitcode = { version = "0.6.3", features = ["derive"] }
+serde-value = "0.7.0"
+
+value = { registry = "si", version = "0.1.13", features = ["dbschema"] }
+unit = { registry = "si", version = "0.1.13", features = [
+    "serialize_as_string",
+] }
+graph = { registry = "si", version = "0.1.6", features = ["serde"] }
+# graph = { path = "../../graph", version = "0.1.5", features = ["serde"] }
+wrapper = { registry = "si", version = "0.1.4" }
+dbschema = { version = "0.1.38", registry = "si" }
+prometheus-core = { version = "=0.1.2-acc.8", registry = "si", features = [
+    "dbschema",
+] }
+prometheus-schema = { version = "=0.1.25-acc.23", registry = "si" }
+prometheus-expr = { version = "=0.1.2-acc.8", registry = "si", features = [
+    "api",
+    "schema",
+] }
+prometheus-api = { version = "=0.1.2-acc.21", registry = "si" }
+jaeger-anomaly-detection = { version = "=0.1.0-acc.34", registry = "si" }
+
+
+[dev-dependencies]
+serde_yaml = "0.9.31"
+paste = "1.0.14"
+criterion = "0.5.1"
+bitcode = { version = "0.6.3", features = ["serde"] }
+bincode = "1.3.3"
+
+[[bench]]
+name = "query"
+harness = false
+
+[[bench]]
+name = "serde"
+harness = false

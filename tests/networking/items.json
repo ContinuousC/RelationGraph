@@ -1,0 +1,47 @@
+{
+  "items": {
+    "db3a96ee-3dcd-11ee-b711-2fda1b3f5b67": {
+      "item_type": "builtin/host",
+      "properties": {
+        "builtin/hostname": { "string": "mndev02" },
+        "builtin/tags": {
+          "map": {
+            "my_tag": { "string": "my_value" }
+          }
+        }
+      }
+    },
+    "e1ef001a-3dcd-11ee-955a-8b6454b53e16": {
+      "item_type": "builtin/host",
+      "properties": {
+        "builtin/hostname": { "string": "mnvmdev02" }
+      }
+    },
+    "8e3d6068-3dcf-11ee-a9a5-97dad9b31119": {
+      "item_type": "networking/router",
+      "properties": {
+        "builtin/hostname": { "string": "router1" },
+        "networking/vendor": { "string": "fortinet" }
+      }
+    },
+    "8cbb2c9e-3dd8-11ee-827d-00155dd6f13c": {
+      "item_type": "networking/switch",
+      "properties": {
+        "builtin/hostname": { "string": "switch1" },
+        "networking/vendor": { "string": "cisco" }
+      }
+    }
+  },
+  "relations": {
+    "e9fe6040-4753-11ee-80db-00155d158820": {
+      "relation_type": "networking/layer2",
+      "source": "db3a96ee-3dcd-11ee-b711-2fda1b3f5b67",
+      "target": "8cbb2c9e-3dd8-11ee-827d-00155dd6f13c"
+    },
+    "2acc5d16-4754-11ee-b717-00155d158820": {
+      "relation_type": "networking/layer2",
+      "source": "8e3d6068-3dcf-11ee-a9a5-97dad9b31119",
+      "target": "8cbb2c9e-3dd8-11ee-827d-00155dd6f13c"
+    }
+  }
+}

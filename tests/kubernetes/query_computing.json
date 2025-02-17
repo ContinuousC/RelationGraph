@@ -1,0 +1,171 @@
+{
+  "root": "cluster",
+  "elements": {
+    "cluster": {
+      "items": {
+	"match": {
+	  "item_type": {
+            "in": ["kubernetes/cluster"]
+	  },
+	  "properties": {
+            "kubernetes/name": {
+	      "string": {
+                "template": "cluster"
+              }
+	    }
+	  }
+        }
+      },
+      "follow": [
+        {
+          "relation": {
+	    "match": {
+              "relation_type": {
+                "in": ["kubernetes/cluster-node"]
+              }
+	    }
+          },
+          "element": "node"
+        }
+      ]
+    },
+    "node": {
+      "items": {
+	"match": {
+	  "item_type": {
+            "in": ["kubernetes/node"]
+	  },
+	  "properties": {
+            "kubernetes/name": {
+	      "string": {
+                "template": "node"
+              }
+	    }
+	  }
+        }
+      },
+      "follow": [
+        {
+          "relation": {
+            "match": {
+	      "relation_type": {
+                "in": ["kubernetes/node-pod"]
+              }
+            }
+	  },
+          "element": "pod"
+        }
+      ]
+    },
+    "pod": {
+      "items": {
+	"match": {
+	  "item_type": {
+            "is": "kubernetes/pod"
+	  },
+	  "properties": {
+            "kubernetes/name": {
+	      "string": {
+                "template": "pod"
+              }
+	    }
+	  },
+	  "relations": {
+	    "match": {
+              "relation_type": {
+                "is": "kubernetes/namespace-pod"
+              },
+              "item": {
+		"match": {
+		  "properties": {
+		    "kubernetes/name": {
+		      "string": {
+			"template": "namespace"
+		      }
+		    }
+		  }
+		}
+              }
+            }
+	  }
+	}
+      },
+      "follow": [
+        {
+          "relation": {
+	    "match": {
+	      "relation_type": {
+                "in": ["kubernetes/pod-container"]
+              }
+	    }
+          },
+          "element": "container"
+        }
+      ]
+    },
+    "container": {
+      "items": {
+	"match": {
+	  "item_type": {
+            "is": "kubernetes/container"
+	  },
+	  "properties": {
+            "kubernetes/name": {
+	      "string": {
+                "template": "container"
+              }
+	    }
+	  }
+        }
+      },
+      "follow": [
+        {
+          "relation": {
+	    "match": {
+	      "relation_type": {
+                "is": "jaeger/runs_on_container"
+              }
+	    }
+          },
+          "element": "traced_service"
+        }
+      ]
+    },
+    "traced_service": {
+      "items": {
+	"match": {
+	  "item_type": {
+            "is": "jaeger/service"
+	  },
+	  "properties": {
+            "jaeger/service_namespace": {
+	      "string": {
+                "template": "traced_service_namespace"
+              }
+	    },
+            "jaeger/service_name": {
+	      "string": {
+		"template": "traced_service_name"
+              }
+	    },
+            "jaeger/service_instance_id": {
+	      "string": {
+		"template": "traced_service_instance_id"
+              }
+	    }
+	  }
+        }
+      }
+    }
+  },
+  "template": {
+    "cluster": "strings",
+    "namespace": "strings",
+    "node": "strings",
+    "pod": "strings",
+    "container": "strings",
+    "traced_service_namespace": "strings",
+    "traced_service_name": "strings",
+    "traced_service_instance_id": "strings"
+  }
+}

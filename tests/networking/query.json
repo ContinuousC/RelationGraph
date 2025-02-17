@@ -1,0 +1,67 @@
+{
+  "root": "root",
+  "elements": {
+    "root": {
+      "items": {
+        "all": [
+          {
+            "match": {
+              "item_type": { "is": "builtin/host" },
+              "properties": {
+                "builtin/hostname": {
+                  "string": { "in": ["mndev02", "mnvmdev02"] }
+                }
+              }
+            }
+          },
+          {
+            "match": {
+              "properties": {
+                "builtin/hostname": {
+                  "string": { "template": "host" }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "follow": [
+        {
+          "relation": {
+            "match": {
+              "relation_type": { "is": "networking/layer2" }
+            }
+          },
+          "element": "netw"
+        }
+      ]
+    },
+    "netw": {
+      "items": {
+        "match": {
+          "item_type": { "in": ["networking/switch", "networking/router"] },
+          "properties": {
+            "networking/vendor": { "string": { "template": "vendor" } }
+          }
+        }
+      },
+      "follow": [
+        {
+          "relation": {
+            "match": {
+              "relation_type": { "is": "networking/layer2" }
+            }
+          },
+          "element": "netw"
+        }
+      ]
+    }
+  },
+  "template": {
+    "host": "strings",
+    "vendor": "strings"
+  },
+  "filters": {
+    "host": ["mndev02"]
+  }
+}

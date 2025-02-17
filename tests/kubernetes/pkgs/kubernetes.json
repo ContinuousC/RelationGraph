@@ -1,0 +1,518 @@
+{
+  "version": "0.1.0",
+  "items": {
+    "namespaced_resource": {
+      "name": {
+        "singular": "Namespaced Resource",
+        "plural": "Namespaced Resources"
+      },
+      "implements": [
+        "cluster_resource"
+      ],
+      "parents": [
+        "namespace"
+      ],
+      "properties": [
+        "namespace"
+      ]
+    },
+    "cluster_resource": {
+      "name": {
+        "singular": "Cluster Resource",
+        "plural": "Cluster Resources"
+      },
+      "name_template": "{name}",
+      "parents": [
+        "cluster"
+      ],
+      "keys": [
+        "name"
+      ],
+      "properties": [
+        "apiversion",
+        "kind",
+        "name",
+        "uid",
+        "creation_timestamp",
+        "labels"
+      ]
+    },
+    "cluster": {
+      "name": {
+        "singular": "Cluster",
+        "plural": "Clusters"
+      },
+      "name_template": "{name}",
+      "keys": [
+        "name"
+      ],
+      "properties": [
+        "name"
+      ]
+    },
+    "node": {
+      "name": {
+        "singular": "Node",
+        "plural": "Nodes"
+      },
+      "implements": [
+        "cluster_resource"
+      ]
+    },
+    "namespace": {
+      "name": {
+        "singular": "Namespace",
+        "plural": "Namespaces"
+      },
+      "implements": [
+        "cluster_resource"
+      ]
+    },
+    "pod": {
+      "name": {
+        "singular": "Pod",
+        "plural": "Pods"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    },
+    "container": {
+      "name": {
+        "singular": "Container",
+        "plural": "Containers"
+      },
+      "name_template": "{name}",
+      "parents": [
+        "pod"
+      ],
+      "keys": [
+        "name"
+      ],
+      "properties": [
+        "name",
+        "image"
+      ]
+    },
+    "init_container": {
+      "name": {
+        "singular": "Init Container",
+        "plural": "Init Containers"
+      },
+      "implements": [
+        "container"
+      ]
+    },
+    "service": {
+      "name": {
+        "singular": "Service",
+        "plural": "Services"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    },
+    "deployment": {
+      "name": {
+        "singular": "Deployment",
+        "plural": "Deployments"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    },
+    "stateful_set": {
+      "name": {
+        "singular": "Stateful Set",
+        "plural": "Stateful Sets"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    },
+    "storage_class": {
+      "name": {
+        "singular": "Storage Class",
+        "plural": "Storage Classes"
+      },
+      "implements": [
+        "cluster_resource"
+      ]
+    },
+    "persistent_volume": {
+      "name": {
+        "singular": "Persistent Volume",
+        "plural": "Persistent Volumes"
+      },
+      "implements": [
+        "cluster_resource"
+      ]
+    },
+    "persistent_volume_claim": {
+      "name": {
+        "singular": "Persistent Volume Claim",
+        "plural": "Persistent Volume Claims"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    },
+    "config_map": {
+      "name": {
+        "singular": "Config Map",
+        "plural": "Config Maps"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    },
+    "secret": {
+      "name": {
+        "singular": "Secret",
+        "plural": "Secrets"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    },
+    "daemon_set": {
+      "name": {
+        "singular": "Daemon Set",
+        "plural": "Daemon Sets"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    },
+    "cron_job": {
+      "name": {
+        "singular": "Cron Job",
+        "plural": "Cron Jobs"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    },
+    "job": {
+      "name": {
+        "singular": "Job",
+        "plural": "Jobs"
+      },
+      "implements": [
+        "namespaced_resource"
+      ]
+    }
+  },
+  "properties": {
+    "apiversion": {
+      "name": "Api Version",
+      "description": "Api Version",
+      "value": "string"
+    },
+    "kind": {
+      "name": "Kind",
+      "description": "Kind",
+      "value": "string"
+    },
+    "name": {
+      "name": "Name",
+      "description": "Name",
+      "value": "string"
+    },
+    "namespace": {
+      "name": "Namespace",
+      "description": "Namespace",
+      "value": "string"
+    },
+    "uid": {
+      "name": "UID",
+      "description": "UID",
+      "value": "string"
+    },
+    "creation_timestamp": {
+      "name": "Created at",
+      "description": "Creation timestamp of the resource",
+      "value": "time"
+    },
+    "labels": {
+      "name": "Labels",
+      "description": "Labels",
+      "value": {
+        "map": "string"
+      }
+    },
+    "image": {
+      "name": "Image",
+      "description": "Image",
+      "value": "string"
+    }
+  },
+  "relations": {
+    "cluster-node": {
+      "name": "Cluster Node",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "node"
+    },
+    "cluster-namespace": {
+      "name": "Cluster Namespace",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "namespace"
+    },
+    "cluster-pod": {
+      "name": "Cluster Pod",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "pod"
+    },
+    "cluster-service": {
+      "name": "Cluster Service",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "service"
+    },
+    "cluster-deployment": {
+      "name": "Cluster Deployment",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "deployment"
+    },
+    "cluster-stateful_set": {
+      "name": "Cluster StatefulSet",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "stateful_set"
+    },
+    "cluster-storage_class": {
+      "name": "Cluster StorageClass",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "storage_class"
+    },
+    "cluster-persistent_volume": {
+      "name": "Cluster PersistentVolume",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "persistent_volume"
+    },
+    "cluster-persistent_volume_claim": {
+      "name": "Cluster PersistentVolumeClaim",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "persistent_volume_claim"
+    },
+    "cluster-config_map": {
+      "name": "Cluster CongigMap",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "config_map"
+    },
+    "cluster-secret": {
+      "name": "Cluster Secret",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "secret"
+    },
+    "namespace-pod": {
+      "name": "Namespace Pod",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "pod"
+    },
+    "namespace-service": {
+      "name": "Namespace Service",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "service"
+    },
+    "namespace-deployment": {
+      "name": "Namespace Deployment",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "deployment"
+    },
+    "namespace-stateful_set": {
+      "name": "Namespace StatefulSet",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "stateful_set"
+    },
+    "namespace-persistent_volume_claim": {
+      "name": "Namespace PersistentVolumeClaim",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "persistent_volume_claim"
+    },
+    "namespace-config_map": {
+      "name": "Namespace Configmap",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "config_map"
+    },
+    "namespace-secret": {
+      "name": "Namespace Secret",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "secret"
+    },
+    "node-pod": {
+      "name": "Node Pod",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "node",
+      "target": "pod"
+    },
+    "pod-container": {
+      "name": "Pod Container",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "pod",
+      "target": "container"
+    },
+    "pod-init_container": {
+      "name": "Pod Init Container",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "pod",
+      "target": "init_container"
+    },
+    "service-pod": {
+      "name": "Service Pod",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "service",
+      "target": "pod"
+    },
+    "deployment-pod": {
+      "name": "Deployment Pod",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "deployment",
+      "target": "pod"
+    },
+    "stateful_set-pod": {
+      "name": "StatefulSet Pod",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "stateful_set",
+      "target": "pod"
+    },
+    "pod-persistent_volume_claim": {
+      "name": "Pod PersistentVolumeClaim",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "pod",
+      "target": "persistent_volume_claim"
+    },
+    "pod-config_map": {
+      "name": "Pod ConfigMap",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "pod",
+      "target": "config_map"
+    },
+    "pod-secret": {
+      "name": "Pod Secret",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "pod",
+      "target": "secret"
+    },
+    "persistent_volume_claim-persistent_volume": {
+      "name": "PersistentVolumeClaim PersistentVolume",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "persistent_volume_claim",
+      "target": "persistent_volume"
+    },
+    "storage_class-persistent_volume": {
+      "name": "StorageClass PersistentVolume",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "storage_class",
+      "target": "persistent_volume"
+    },
+    "daemon_set-pod": {
+      "name": "DaemonSet Pod",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "daemon_set",
+      "target": "pod"
+    },
+    "cron_job-pod": {
+      "name": "CronJob Pod",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cron_job",
+      "target": "pod"
+    },
+    "job-pod": {
+      "name": "Job Pod",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "job",
+      "target": "pod"
+    },
+    "cluster-daemon_set": {
+      "name": "Cluster DaemonSet",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "daemon_set"
+    },
+    "cluster-cron_job": {
+      "name": "Cluster CronJob",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "cron_job"
+    },
+    "cluster-job": {
+      "name": "Cluster Job",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "cluster",
+      "target": "job"
+    },
+    "namespace-daemon_set": {
+      "name": "Namespace DaemonSet",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "daemon_set"
+    },
+    "namespace-cron_job": {
+      "name": "Namespace CronJob",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "cron_job"
+    },
+    "namespace-job": {
+      "name": "Namespace Job",
+      "multiplicity": "one-to-many",
+      "bidirectional": false,
+      "source": "namespace",
+      "target": "job"
+    }
+  }
+}
