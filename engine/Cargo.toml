@@ -60,35 +60,35 @@ h2 = "0.3.26"
 schemars = "0.8"
 apistos = "0.2.4"
 
-rpc = { version = "0.1.37", registry = "si", features = ["opentelemetry"] }
-dbdaemon-api = { version = "=0.1.5-acc.4", registry = "si" }
-dbdaemon-types = { version = "=0.1.1-acc.2", registry = "si" }
-dbschema = { version = "0.1.30", registry = "si", features = ["schemars"] }
-graph = { registry = "si", version = "0.1.6", features = ["serde"] }
+rpc = { version = "0.1.37", features = ["opentelemetry"] }
+dbdaemon-api = { version = "=0.1.5-acc.4" }
+dbdaemon-types = { version = "=0.1.1-acc.2" }
+dbschema = { version = "0.1.30", features = ["schemars"] }
+graph = { version = "0.1.6", features = ["serde"] }
 # graph = { path = "../../graph", version = "0.1.5", features = ["serde"] }
-relation-graph = { version = "=0.1.4-acc.48", registry = "si", features = [
+relation-graph = { version = "=0.1.4-acc.48", features = [
     "apistos",
     "tokio",
 ] }
-prometheus-core = { version = "=0.1.2-acc.8", registry = "si", features = [
+prometheus-core = { version = "=0.1.2-acc.8", features = [
     "schemars",
 ] }
-prometheus-api = { version = "=0.1.2-acc.21", registry = "si", features = [
+prometheus-api = { version = "=0.1.2-acc.21", features = [
     "schemars",
 ] }
-prometheus-expr = { version = "=0.1.2-acc.8", registry = "si", features = [
+prometheus-expr = { version = "=0.1.2-acc.8", features = [
     "schemars",
 ] }
-prometheus-schema = { version = "=0.1.25-acc.23", registry = "si", features = [
+prometheus-schema = { version = "=0.1.25-acc.23", features = [
     "schemars",
     "apistos",
     "tokio",
 ] }
-value = { registry = "si", version = "0.1.10" }
+value = "0.1.10"
 tap = "1.0.1"
 itertools = "0.13.0"
 bitcode = { version = "0.6.3", features = ["serde"] }
 bincode = "1.3.3"
 
 [dev-dependencies]
-dbschema-elastic = { version = "0.1.0", registry = "si" }
+dbschema-elastic = "0.1.0"
