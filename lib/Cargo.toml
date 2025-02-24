@@ -35,7 +35,7 @@ tokio = ["dep:tokio", "dep:tokio-stream"]
 serde = { version = "1.0.175", features = ["derive"] }
 semver = { version = "1.0.20", features = ["serde"] }
 uuid = { version = "1.4.1", features = ["v4", "serde", "js"] }
-tsify = { registry = "si", version = "0.4.6", optional = true }
+tsify = { version = "0.4.8", optional = true }
 wasm-bindgen = { version = "0.2", optional = true }
 serde_with = "3.1.0"
 serde_json = { version = "1.0.103", features = ["raw_value"] }
@@ -54,24 +54,24 @@ replace_with = "0.1.7"
 bitcode = { version = "0.6.3", features = ["derive"] }
 serde-value = "0.7.0"
 
-value = { registry = "si", version = "0.1.13", features = ["dbschema"] }
-unit = { registry = "si", version = "0.1.13", features = [
+value = { version = "0.1.13", features = ["dbschema"] }
+unit = { version = "0.1.13", features = [
     "serialize_as_string",
 ] }
-graph = { registry = "si", version = "0.1.6", features = ["serde"] }
+graph = { version = "0.1.6", features = ["serde"] }
 # graph = { path = "../../graph", version = "0.1.5", features = ["serde"] }
-wrapper = { registry = "si", version = "0.1.4" }
-dbschema = { version = "0.1.38", registry = "si" }
-prometheus-core = { version = "=0.1.2-acc.8", registry = "si", features = [
+wrapper = "0.1.4"
+dbschema = "0.1.39"
+prometheus-core = { version = "=0.1.2-acc.8", features = [
     "dbschema",
 ] }
-prometheus-schema = { version = "=0.1.25-acc.23", registry = "si" }
-prometheus-expr = { version = "=0.1.2-acc.8", registry = "si", features = [
+prometheus-schema = { version = "=0.1.25-acc.23" }
+prometheus-expr = { version = "=0.1.2-acc.8", features = [
     "api",
     "schema",
 ] }
-prometheus-api = { version = "=0.1.2-acc.21", registry = "si" }
-jaeger-anomaly-detection = { version = "=0.1.0-acc.34", registry = "si" }
+prometheus-api = { version = "=0.1.2-acc.21" }
+jaeger-anomaly-detection = { version = "=0.1.0-acc.34" }
 
 
 [dev-dependencies]

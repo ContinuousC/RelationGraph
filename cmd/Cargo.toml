@@ -17,10 +17,10 @@ serde_yaml = "0.9.27"
 thiserror = "1.0.44"
 env_logger = "0.10.0"
 
-relation-graph = { version = "=0.1.4-acc.48", registry = "si" }
-prometheus-core = { version = "=0.1.2-acc.8", registry = "si" }
-prometheus-api = { version = "=0.1.2-acc.21", registry = "si" }
-prometheus-expr = { version = "=0.1.2-acc.8", registry = "si" }
-prometheus-schema = { version = "=0.1.25-acc.23", registry = "si" }
-dbschema = { version = "0.1.31", registry = "si" }
-dbschema-elastic = { version = "0.1.0", registry = "si" }
+relation-graph = { version = "=0.1.4-acc.48" }
+prometheus-core = { version = "=0.1.2-acc.8" }
+prometheus-api = { version = "=0.1.2-acc.21" }
+prometheus-expr = { version = "=0.1.2-acc.8" }
+prometheus-schema = { version = "=0.1.25-acc.23" }
+dbschema = { version = "0.1.31" }
+dbschema-elastic = { version = "0.1.0" }

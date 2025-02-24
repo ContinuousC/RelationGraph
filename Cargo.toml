@@ -12,40 +12,30 @@ members = ["lib", "cmd", "wasm", "engine"]
 #strip = true
 
 [patch.crates-io]
-serde-wasm-bindgen = { registry = "si", version = "0.5" }
-apistos = { registry = "si", version = "0.2.5" }
-schemars = { registry = "si", version = "0.8.22" }
-actix-web = { git = "ssh://git@sigit01/~/Development/ContinuousC/Actix-Web", rev = "a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20" }
-actix-router = { git = "ssh://git@sigit01/~/Development/ContinuousC/Actix-Web", rev = "a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20" }
+# actix-web = { git = "https://github.com/ContinuousC/Actix-Web.git", rev = "a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20" }
+actix-router = { git = "https://github.com/ContinuousC/Actix-Web.git", rev = "a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20" }
+apistos = { git = "https://github.com/ContinuousC/Apistos.git", rev = "f8583845a7a7f30dccd3908577743fda673656b8", version = "0.2.5" }
+schemars = { git = "https://github.com/ContinuousC/ApistosSchemaRs.git", rev = "ace307537ff7913c30f465cbfdaf70f4883618a9", version = "0.8.22" }
+schemars_derive = { git = "https://github.com/ContinuousC/ApistosSchemaRs.git", rev = "ace307537ff7913c30f465cbfdaf70f4883618a9", version = "0.8.21" }
+tsify = { git = "https://github.com/ContinuousC/Tsify.git", rev = "de64626ba4dd8a3abca8b8b2dd082334890ec60c", version = "=0.4.8" }
+tsify-macros = { git = "https://github.com/ContinuousC/Tsify.git", rev = "de64626ba4dd8a3abca8b8b2dd082334890ec60c", version = "=0.4.8" }
 
-# tsify = { registry = "si", version = "=0.4.6-si" }
-# tsify-macros = { registry = "si", version = "=0.4.6-si" }
-# serde_json = { path = "json" }
+prometheus-api    = { git = "https://github.com/ContinuousC/PrometheusSchema.git", rev = "a47fd68040624f1ebb8746bf47dd3c575637d1e9" }
+prometheus-core   = { git = "https://github.com/ContinuousC/PrometheusSchema.git", rev = "a47fd68040624f1ebb8746bf47dd3c575637d1e9" }
+prometheus-expr   = { git = "https://github.com/ContinuousC/PrometheusSchema.git", rev = "a47fd68040624f1ebb8746bf47dd3c575637d1e9" }
+prometheus-schema = { git = "https://github.com/ContinuousC/PrometheusSchema.git", rev = "a47fd68040624f1ebb8746bf47dd3c575637d1e9" }
 
-[patch.si]
-# rpc = { path = "../../../Rpc/Source/Rust/rpc" }
-# dbschema = { path = "../../../DBSchema/Source/Rust/dbschema" }
-# dbschema-derive = { path = "../../../DBSchema/Source/Rust/dbschema-derive" }
-
-# prometheus-core = { path = "../PrometheusSchema/core" }
-# prometheus-api = { path = "../PrometheusSchema/api" }
-# prometheus-expr = { path = "../PrometheusSchema/expr" }
-# prometheus-schema = { path = "../PrometheusSchema/schema" }
-
-# jaeger-anomaly-detection = { path = "../JaegerAnomalyDetection/lib" }
-
-# tsify = { path = "../../tsify" }
-# tsify-macros = { path = "../../tsify/tsify-macros" }
-tsify = { git = "ssh://git@sigit01/~/Development/ContinuousC/Tsify" }
-tsify-macros = { git = "ssh://git@sigit01/~/Development/ContinuousC/Tsify" }
+jaeger-anomaly-detection = { git = "https://github.com/ContinuousC/JaegerAnomalyDetection.git", rev = "909ff1d66b37a1e433653dac423416db4d9950ee" }
+dbschema = { git = "https://github.com/ContinuousC/DBSchema.git", tag = "dbschema_v0.1.39", version = "=0.1.39" }
+dbschema-derive = { git = "https://github.com/ContinuousC/DBSchema.git", tag = "dbschema-derive_v0.1.9", version = "=0.1.9" }
+dbschema-elastic = { git = "https://github.com/ContinuousC/DBSchema.git", rev = "2fbe1c1ec41ee2093502c54a06d112a7ec8fa697", version = "=0.1.4" }
+dbdaemon-api = { git = "https://github.com/ContinuousC/DBDaemon.git", rev = "43ce30e2aca913c26375ee70f322d57cdcd6abfa" }
+dbdaemon-types = { git = "https://github.com/ContinuousC/DBDaemon.git", rev = "43ce30e2aca913c26375ee70f322d57cdcd6abfa" }
+rpc = { git = "https://github.com/ContinuousC/Rpc.git", rev = "2d313605d6f53a2c106bc0bc1c455023116e7d70" }
+rpc_derive = { git = "https://github.com/ContinuousC/Rpc.git", rev = "2d313605d6f53a2c106bc0bc1c455023116e7d70" }
+graph = { git = "https://github.com/ContinuousC/Graph.git", rev = "5cbdd653af195accee6710a5c13ee19f40f1cb6f", version = "=0.1.7" }
+wrapper = { git = "https://github.com/ContinuousC/Wrapper.git", rev = "057b57faa05c7c89bc461113e537107b108be7d1" }
+unit = { git = "https://github.com/ContinuousC/SmartAgent.git", rev = "d74f8071605c02ef4ba352e16cd79699ec3f24d5" }
+value = { git = "https://github.com/ContinuousC/SmartAgent.git", rev = "d74f8071605c02ef4ba352e16cd79699ec3f24d5" }
 
 relation-graph = { path = "lib" }
-
-# rpc = { git = "ssh://git@sigit01/~/Development/ContinuousC/Rpc", rev = "27a6ee3cba7f8a56881a41e710e61468007a13e6" }
-# rpc_derive = { git = "ssh://git@sigit01/~/Development/ContinuousC/Rpc", rev = "27a6ee3cba7f8a56881a41e710e61468007a13e6" }
-
-# dbschema = { git = "ssh://git@sigit01/~/Development/ContinuousC/DBSchema", rev = "f2b850c6dda5bea18ab25af15bc7c9a4a423f5d3" }
-# dbschema-derive = { git = "ssh://git@sigit01/~/Development/ContinuousC/DBSchema", rev = "f2b850c6dda5bea18ab25af15bc7c9a4a423f5d3" }
-# dbschema-elastic = { git = "ssh://git@sigit01/~/Development/ContinuousC/DBSchema", rev = "f2b850c6dda5bea18ab25af15bc7c9a4a423f5d3" }
-
-# dbdaemon-api = { git = "ssh://git@sigit01/~/Development/ContinuousC/DBDaemon", rev = "3f57c12cd02427f12987838058c4b0c0bd69622c" }

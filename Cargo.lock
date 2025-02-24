@@ -72,7 +72,7 @@ dependencies = [
 [[package]]
 name = "actix-router"
 version = "0.5.3"
-source = "git+ssh://git@sigit01/~/Development/ContinuousC/Actix-Web?rev=a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20#a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20"
+source = "git+https://github.com/ContinuousC/Actix-Web.git?rev=a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20#a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20"
 dependencies = [
  "bytestring",
  "cfg-if",
@@ -95,16 +95,16 @@ dependencies = [
 
 [[package]]
 name = "actix-server"
-version = "2.5.0"
+version = "2.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7ca2549781d8dd6d75c40cf6b6051260a2cc2f3c62343d761a969a0640646894"
+checksum = "3eb13e7eef0423ea6eab0e59f6c72e7cb46d33691ad56a726b3cd07ddec2c2d4"
 dependencies = [
  "actix-rt",
  "actix-service",
  "actix-utils",
  "futures-core",
  "futures-util",
- "mio",
+ "mio 0.8.11",
  "socket2",
  "tokio",
  "tracing",
@@ -152,8 +152,9 @@ dependencies = [
 
 [[package]]
 name = "actix-web"
-version = "4.8.0"
-source = "git+ssh://git@sigit01/~/Development/ContinuousC/Actix-Web?rev=a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20#a5dcb8ae884b5ffa81794ddea4ff00d402a7ca20"
+version = "4.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9180d76e5cc7ccbc4d60a506f2c727730b154010262df5b910eb17dbe4b8cb38"
 dependencies = [
  "actix-codec",
  "actix-http",
@@ -174,6 +175,7 @@ dependencies = [
  "encoding_rs",
  "futures-core",
  "futures-util",
+ "impl-more",
  "itoa",
  "language-tags",
  "log",
@@ -221,8 +223,7 @@ checksum = "512761e0bb2578dd7380c6baaa0f4ce03e84f95e960231d1dec8bf4d7d6e2627"
 [[package]]
 name = "agent_derive"
 version = "0.1.1"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "fb7ab7e1ac6f1c73696568c45a563ff26e949ee793867a0a35465d33a575b8b7"
+source = "git+https://github.com/ContinuousC/SmartAgent.git?rev=d74f8071605c02ef4ba352e16cd79699ec3f24d5#d74f8071605c02ef4ba352e16cd79699ec3f24d5"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -231,9 +232,8 @@ dependencies = [
 
 [[package]]
 name = "agent_serde"
-version = "0.1.4"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "d9002324d2cf6e753678a7a9df88b8ed17aa8c48ce863426c8ec4c6ddadf54a6"
+version = "0.1.3"
+source = "git+https://github.com/ContinuousC/SmartAgent.git?rev=d74f8071605c02ef4ba352e16cd79699ec3f24d5#d74f8071605c02ef4ba352e16cd79699ec3f24d5"
 dependencies = [
  "chrono",
  "regex",
@@ -243,8 +243,7 @@ dependencies = [
 [[package]]
 name = "agent_utils"
 version = "0.2.1"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "fb483fe3102141873a569e40ab2cd2ce4c392dfd011b40debac8349020af3235"
+source = "git+https://github.com/ContinuousC/SmartAgent.git?rev=d74f8071605c02ef4ba352e16cd79699ec3f24d5#d74f8071605c02ef4ba352e16cd79699ec3f24d5"
 dependencies = [
  "agent_derive",
  "log",
@@ -260,7 +259,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e89da841a80418a9b391ebaea17f5c112ffaaa96f621d2c285b5174da76b9011"
 dependencies = [
  "cfg-if",
- "getrandom 0.2.15",
+ "getrandom 0.2.14",
  "once_cell",
  "version_check",
  "zerocopy",
@@ -382,8 +381,7 @@ checksum = "34ac096ce696dc2fcabef30516bb13c0a68a11d30131d3df6f04711467681b04"
 [[package]]
 name = "apistos"
 version = "0.2.5"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "323fa4da746d67706fcaaab467b44fc958efff874112e813d85ca433ab89e6a4"
+source = "git+https://github.com/ContinuousC/Apistos.git?rev=f8583845a7a7f30dccd3908577743fda673656b8#f8583845a7a7f30dccd3908577743fda673656b8"
 dependencies = [
  "actix-service",
  "actix-web",
@@ -404,8 +402,7 @@ dependencies = [
 [[package]]
 name = "apistos-core"
 version = "0.2.5"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "7a298a6c49f4c6b60d23a1171f1932c979778ee867017af695835be0fb01e6b4"
+source = "git+https://github.com/ContinuousC/Apistos.git?rev=f8583845a7a7f30dccd3908577743fda673656b8#f8583845a7a7f30dccd3908577743fda673656b8"
 dependencies = [
  "actix-web",
  "apistos-models",
@@ -415,9 +412,8 @@ dependencies = [
 
 [[package]]
 name = "apistos-gen"
-version = "0.2.4"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "52620c43caacec122a49443745f39111ee2b0badfd8b39c98f742cdc0fdc26c3"
+version = "0.2.5"
+source = "git+https://github.com/ContinuousC/Apistos.git?rev=f8583845a7a7f30dccd3908577743fda673656b8#f8583845a7a7f30dccd3908577743fda673656b8"
 dependencies = [
  "actix-web",
  "convert_case 0.6.0",
@@ -430,9 +426,8 @@ dependencies = [
 
 [[package]]
 name = "apistos-models"
-version = "0.2.4"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "fe7aab4f0034740d6404fd2748111619f59d0df14d7da383b37491dd6568d54e"
+version = "0.2.5"
+source = "git+https://github.com/ContinuousC/Apistos.git?rev=f8583845a7a7f30dccd3908577743fda673656b8#f8583845a7a7f30dccd3908577743fda673656b8"
 dependencies = [
  "indexmap 2.7.1",
  "schemars",
@@ -442,9 +437,8 @@ dependencies = [
 
 [[package]]
 name = "apistos-plugins"
-version = "0.2.4"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "87acb56c1e2e255ed7ec864c7fd2514d44577b4f0d2053180b249230d582d7d6"
+version = "0.2.5"
+source = "git+https://github.com/ContinuousC/Apistos.git?rev=f8583845a7a7f30dccd3908577743fda673656b8#f8583845a7a7f30dccd3908577743fda673656b8"
 dependencies = [
  "actix-web",
 ]
@@ -643,7 +637,7 @@ dependencies = [
  "miniz_oxide",
  "object",
  "rustc-demangle",
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -830,7 +824,7 @@ dependencies = [
  "num-traits",
  "serde",
  "wasm-bindgen",
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -1180,8 +1174,7 @@ checksum = "0e60eed09d8c01d3cee5b7d30acb059b76614c918fa0f992e0dd6eeb10daad6f"
 [[package]]
 name = "dbdaemon-api"
 version = "0.1.5-acc.4"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "01008ad6953fb39d041f8c71f643ae94a70a59f18aaa6cb8f9945b9a761be022"
+source = "git+https://github.com/ContinuousC/DBDaemon.git?rev=43ce30e2aca913c26375ee70f322d57cdcd6abfa#43ce30e2aca913c26375ee70f322d57cdcd6abfa"
 dependencies = [
  "chrono",
  "clap",
@@ -1201,8 +1194,7 @@ dependencies = [
 [[package]]
 name = "dbdaemon-types"
 version = "0.1.1-acc.2"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "e96989b6c4d1d25b8d8fadac046a4d06a0277712ba91e363b10b41d854220901"
+source = "git+https://github.com/ContinuousC/DBDaemon.git?rev=43ce30e2aca913c26375ee70f322d57cdcd6abfa#43ce30e2aca913c26375ee70f322d57cdcd6abfa"
 dependencies = [
  "chrono",
  "dbschema",
@@ -1214,9 +1206,8 @@ dependencies = [
 
 [[package]]
 name = "dbschema"
-version = "0.1.38"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "90ac6cdc196abcaf2060b006bbecfafd8e9fe4dcc64fdbc379018a00184356d9"
+version = "0.1.39"
+source = "git+https://github.com/ContinuousC/DBSchema.git?tag=dbschema_v0.1.39#2fbe1c1ec41ee2093502c54a06d112a7ec8fa697"
 dependencies = [
  "chrono",
  "clap",
@@ -1231,9 +1222,8 @@ dependencies = [
 
 [[package]]
 name = "dbschema-derive"
-version = "0.1.8"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "8e536089c71c48a128d4a21b01cdc6ea7fd6f9d0fb1523eb6a5c52aed0bb52dd"
+version = "0.1.9"
+source = "git+https://github.com/ContinuousC/DBSchema.git?tag=dbschema-derive_v0.1.9#2fbe1c1ec41ee2093502c54a06d112a7ec8fa697"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1242,9 +1232,8 @@ dependencies = [
 
 [[package]]
 name = "dbschema-elastic"
-version = "0.1.3"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "283d71d2098b859d8e052d8fd39ecddf79eee4650d47c75ab6300b039e2da3cb"
+version = "0.1.4"
+source = "git+https://github.com/ContinuousC/DBSchema.git?rev=2fbe1c1ec41ee2093502c54a06d112a7ec8fa697#2fbe1c1ec41ee2093502c54a06d112a7ec8fa697"
 dependencies = [
  "chrono",
  "clap",
@@ -1564,7 +1553,7 @@ dependencies = [
  "cfg-if",
  "libc",
  "wasi 0.13.3+wasi-0.2.2",
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -1600,9 +1589,8 @@ dependencies = [
 
 [[package]]
 name = "graph"
-version = "0.1.6"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "c3df4aa968db541cef44186a2a0fc64eef35981295605e9f08232ad66a1af9ba"
+version = "0.1.7"
+source = "git+https://github.com/ContinuousC/Graph.git?rev=5cbdd653af195accee6710a5c13ee19f40f1cb6f#5cbdd653af195accee6710a5c13ee19f40f1cb6f"
 dependencies = [
  "serde",
  "typed-arena",
@@ -2096,12 +2084,11 @@ checksum = "d75a2a4b1b190afb6f5425f10f6a8f959d2ea0b9c2b1d79553551850539e4674"
 [[package]]
 name = "jaeger-anomaly-detection"
 version = "0.1.0-acc.34"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "c25186958a371f4b24415aa534cf5aac62630d044b116726de1a6bfa3e93e98f"
+source = "git+https://github.com/ContinuousC/JaegerAnomalyDetection.git?rev=909ff1d66b37a1e433653dac423416db4d9950ee#909ff1d66b37a1e433653dac423416db4d9950ee"
 dependencies = [
  "chrono",
  "const_format",
- "getrandom 0.2.15",
+ "getrandom 0.2.14",
  "ordered-float 4.6.0",
  "prometheus-api",
  "prometheus-core",
@@ -2168,7 +2155,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc2f4eb4bc735547cfed7c0a4922cbd04a4655978c09b54f1f7b228750664c34"
 dependencies = [
  "cfg-if",
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -2307,12 +2294,23 @@ dependencies = [
 
 [[package]]
 name = "mio"
+version = "0.8.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a4a650543ca06a924e8b371db273b2756685faae30f8487da1b56505a8f78b0c"
+dependencies = [
+ "libc",
+ "log",
+ "wasi 0.11.0+wasi-snapshot-preview1",
+ "windows-sys 0.48.0",
+]
+
+[[package]]
+name = "mio"
 version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2886843bf800fba2e3377cff24abf6379b4c4d5c6681eaf9ea5b0d15090450bd"
 dependencies = [
  "libc",
- "log",
  "wasi 0.11.0+wasi-snapshot-preview1",
  "windows-sys 0.52.0",
 ]
@@ -2358,7 +2356,6 @@ version = "0.2.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0dab59f8e050d5df8e4dd87d9206fb6f65a483e20ac9fda365ade4fab353196c"
 dependencies = [
- "lazy_static",
  "libc",
  "log",
  "openssl",
@@ -2630,7 +2627,7 @@ dependencies = [
  "libc",
  "redox_syscall",
  "smallvec",
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -2819,8 +2816,7 @@ dependencies = [
 [[package]]
 name = "prometheus-api"
 version = "0.1.2-acc.21"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "44fa4818594bf25d4657f1c6e80639bab64f3db2050de95b559149f5950dd4d8"
+source = "git+https://github.com/ContinuousC/PrometheusSchema.git?rev=a47fd68040624f1ebb8746bf47dd3c575637d1e9#a47fd68040624f1ebb8746bf47dd3c575637d1e9"
 dependencies = [
  "chrono",
  "prometheus-core",
@@ -2835,8 +2831,7 @@ dependencies = [
 [[package]]
 name = "prometheus-core"
 version = "0.1.2-acc.8"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "d41a6d0d930dde1e378ba9501037a3e2766dae1c1afc25d3c0c35453a92827ba"
+source = "git+https://github.com/ContinuousC/PrometheusSchema.git?rev=a47fd68040624f1ebb8746bf47dd3c575637d1e9#a47fd68040624f1ebb8746bf47dd3c575637d1e9"
 dependencies = [
  "dbschema",
  "schemars",
@@ -2850,8 +2845,7 @@ dependencies = [
 [[package]]
 name = "prometheus-expr"
 version = "0.1.2-acc.8"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "4f0ee786cfafeed384707e88e9086fdf094b782259c5b84a17f1a27647a21450"
+source = "git+https://github.com/ContinuousC/PrometheusSchema.git?rev=a47fd68040624f1ebb8746bf47dd3c575637d1e9#a47fd68040624f1ebb8746bf47dd3c575637d1e9"
 dependencies = [
  "chrono",
  "derive_more 1.0.0",
@@ -2874,8 +2868,7 @@ dependencies = [
 [[package]]
 name = "prometheus-schema"
 version = "0.1.25-acc.23"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "de21c7fd005723e18fd76151ef9afe641d5616c18b6148a429226b3cb5822374"
+source = "git+https://github.com/ContinuousC/PrometheusSchema.git?rev=a47fd68040624f1ebb8746bf47dd3c575637d1e9#a47fd68040624f1ebb8746bf47dd3c575637d1e9"
 dependencies = [
  "apistos",
  "async-recursion",
@@ -2960,7 +2953,7 @@ version = "0.6.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
 dependencies = [
- "getrandom 0.2.15",
+ "getrandom 0.2.14",
  "serde",
 ]
 
@@ -3277,7 +3270,7 @@ checksum = "73e6153390585f6961341b50e5a1931d6be6dee4292283635903c26ef9d980d2"
 dependencies = [
  "anyhow",
  "async-trait",
- "getrandom 0.2.15",
+ "getrandom 0.2.14",
  "http 1.2.0",
  "matchit 0.8.6",
  "opentelemetry",
@@ -3295,7 +3288,7 @@ checksum = "c17fa4cb658e3583423e915b9f3acc01cceaee1860e33d59ebae66adc3a2dc0d"
 dependencies = [
  "cc",
  "cfg-if",
- "getrandom 0.2.15",
+ "getrandom 0.2.14",
  "libc",
  "spin",
  "untrusted",
@@ -3304,9 +3297,8 @@ dependencies = [
 
 [[package]]
 name = "rpc"
-version = "0.1.37"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "b2c0d3cfdcd6c5239ac2f538351df9bcdbd4f7431a2ef2d2ea2224157cfcac47"
+version = "0.1.38"
+source = "git+https://github.com/ContinuousC/Rpc.git?rev=2d313605d6f53a2c106bc0bc1c455023116e7d70#2d313605d6f53a2c106bc0bc1c455023116e7d70"
 dependencies = [
  "cpu-time",
  "futures",
@@ -3331,9 +3323,8 @@ dependencies = [
 
 [[package]]
 name = "rpc_derive"
-version = "0.1.22"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "cfc0691511255cd349b8b75979a12ff4cde07b2224da587f0252b817c098af6e"
+version = "0.1.23"
+source = "git+https://github.com/ContinuousC/Rpc.git?rev=2d313605d6f53a2c106bc0bc1c455023116e7d70#2d313605d6f53a2c106bc0bc1c455023116e7d70"
 dependencies = [
  "darling",
  "proc-macro2",
@@ -3478,8 +3469,7 @@ dependencies = [
 [[package]]
 name = "schemars"
 version = "0.8.22"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "614183945cd5bd063ac5f2b7e6dbd7abbbaf2edf8eb876a9558ec5adc01c1bb7"
+source = "git+https://github.com/ContinuousC/ApistosSchemaRs.git?rev=ace307537ff7913c30f465cbfdaf70f4883618a9#ace307537ff7913c30f465cbfdaf70f4883618a9"
 dependencies = [
  "chrono",
  "dyn-clone",
@@ -3494,8 +3484,7 @@ dependencies = [
 [[package]]
 name = "schemars_derive"
 version = "0.8.21"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "2dfe01b86b3854fd3c3ad6b5e575982c51b7d7e073f2489cc3eae467a5cc27a2"
+source = "git+https://github.com/ContinuousC/ApistosSchemaRs.git?rev=ace307537ff7913c30f465cbfdaf70f4883618a9#ace307537ff7913c30f465cbfdaf70f4883618a9"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -3563,8 +3552,8 @@ dependencies = [
 [[package]]
 name = "serde-wasm-bindgen"
 version = "0.5.0"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "514963bc9246da380112184dd02868b6683b8356cde1c5536462ad2dd23bc81a"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f3b143e2833c57ab9ad3ea280d21fd34e285a42837aeb0ee301f4f41890fa00e"
 dependencies = [
  "js-sys",
  "serde",
@@ -3988,7 +3977,7 @@ dependencies = [
  "backtrace",
  "bytes",
  "libc",
- "mio",
+ "mio 1.0.3",
  "parking_lot",
  "pin-project-lite",
  "signal-hook-registry",
@@ -4235,7 +4224,7 @@ checksum = "e421abadd41a4225275504ea4d6566923418b7f05506fbc9c0fe86ba7396114b"
 [[package]]
 name = "tsify"
 version = "0.4.8"
-source = "git+ssh://git@sigit01/~/Development/ContinuousC/Tsify#d4c11099ca38372cbf191662059bbfdf97b95079"
+source = "git+https://github.com/ContinuousC/Tsify.git?rev=de64626ba4dd8a3abca8b8b2dd082334890ec60c#de64626ba4dd8a3abca8b8b2dd082334890ec60c"
 dependencies = [
  "gloo-utils",
  "serde",
@@ -4248,7 +4237,7 @@ dependencies = [
 [[package]]
 name = "tsify-macros"
 version = "0.4.8"
-source = "git+ssh://git@sigit01/~/Development/ContinuousC/Tsify#d4c11099ca38372cbf191662059bbfdf97b95079"
+source = "git+https://github.com/ContinuousC/Tsify.git?rev=de64626ba4dd8a3abca8b8b2dd082334890ec60c#de64626ba4dd8a3abca8b8b2dd082334890ec60c"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -4289,8 +4278,7 @@ checksum = "ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853"
 [[package]]
 name = "unit"
 version = "0.1.15"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "81b2396bcac3af18b709a2edd9ac0ee0cba24d033960e9b04e026f9dc8335900"
+source = "git+https://github.com/ContinuousC/SmartAgent.git?rev=d74f8071605c02ef4ba352e16cd79699ec3f24d5#d74f8071605c02ef4ba352e16cd79699ec3f24d5"
 dependencies = [
  "clap",
  "nom",
@@ -4350,7 +4338,7 @@ version = "1.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b3758f5e68192bb96cc8f9b7e2c2cfdabb435499a28499a42f8f984092adad4b"
 dependencies = [
- "getrandom 0.2.15",
+ "getrandom 0.2.14",
  "serde",
  "wasm-bindgen",
 ]
@@ -4364,8 +4352,7 @@ checksum = "ba73ea9cf16a25df0c8caa16c51acb937d5712a8429db78a3ee29d5dcacd3a65"
 [[package]]
 name = "value"
 version = "0.1.14"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "337ca4e350225561a3ca25996d712c466bd53e87673e1349a89491504756c255"
+source = "git+https://github.com/ContinuousC/SmartAgent.git?rev=d74f8071605c02ef4ba352e16cd79699ec3f24d5#d74f8071605c02ef4ba352e16cd79699ec3f24d5"
 dependencies = [
  "agent_serde",
  "agent_utils",
@@ -4574,7 +4561,7 @@ version = "0.52.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "33ab640c8d7e35bf8ba19b884ba838ceb4fba93a4e8c65a9059d08afcfc683d9"
 dependencies = [
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -4585,7 +4572,7 @@ checksum = "e400001bb720a623c1c69032f8e3e4cf09984deec740f007dd2b03ec864804b0"
 dependencies = [
  "windows-result",
  "windows-strings",
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -4594,7 +4581,7 @@ version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1d1043d8214f791817bab27572aaa8af63732e11bf84aa21a45a78d6c317ae0e"
 dependencies = [
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -4604,7 +4591,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4cd9b125c486025df0eabcb585e62173c6c9eddcec5d117d3b6e8c30e2ee4d10"
 dependencies = [
  "windows-result",
- "windows-targets",
+ "windows-targets 0.52.6",
+]
+
+[[package]]
+name = "windows-sys"
+version = "0.48.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "677d2418bec65e3338edb076e806bc1ec15693c5d0104683f2efe857f61056a9"
+dependencies = [
+ "windows-targets 0.48.5",
 ]
 
 [[package]]
@@ -4613,7 +4609,7 @@ version = "0.52.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "282be5f36a8ce781fad8c8ae18fa3f9beff57ec1b52cb3de0789201425d9a33d"
 dependencies = [
- "windows-targets",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -4622,7 +4618,22 @@ version = "0.59.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1e38bc4d79ed67fd075bcc251a1c39b32a1776bbe92e5bef1f0bf1f8c531853b"
 dependencies = [
- "windows-targets",
+ "windows-targets 0.52.6",
+]
+
+[[package]]
+name = "windows-targets"
+version = "0.48.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9a2fa6e2155d7247be68c096456083145c183cbbbc2764150dda45a87197940c"
+dependencies = [
+ "windows_aarch64_gnullvm 0.48.5",
+ "windows_aarch64_msvc 0.48.5",
+ "windows_i686_gnu 0.48.5",
+ "windows_i686_msvc 0.48.5",
+ "windows_x86_64_gnu 0.48.5",
+ "windows_x86_64_gnullvm 0.48.5",
+ "windows_x86_64_msvc 0.48.5",
 ]
 
 [[package]]
@@ -4631,15 +4642,21 @@ version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9b724f72796e036ab90c1021d4780d4d3d648aca59e491e6b98e725b84e99973"
 dependencies = [
- "windows_aarch64_gnullvm",
- "windows_aarch64_msvc",
- "windows_i686_gnu",
+ "windows_aarch64_gnullvm 0.52.6",
+ "windows_aarch64_msvc 0.52.6",
+ "windows_i686_gnu 0.52.6",
  "windows_i686_gnullvm",
- "windows_i686_msvc",
- "windows_x86_64_gnu",
- "windows_x86_64_gnullvm",
- "windows_x86_64_msvc",
+ "windows_i686_msvc 0.52.6",
+ "windows_x86_64_gnu 0.52.6",
+ "windows_x86_64_gnullvm 0.52.6",
+ "windows_x86_64_msvc 0.52.6",
 ]
+
+[[package]]
+name = "windows_aarch64_gnullvm"
+version = "0.48.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2b38e32f0abccf9987a4e3079dfb67dcd799fb61361e53e2882c3cbaf0d905d8"
 
 [[package]]
 name = "windows_aarch64_gnullvm"
@@ -4649,9 +4666,21 @@ checksum = "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3"
 
 [[package]]
 name = "windows_aarch64_msvc"
+version = "0.48.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dc35310971f3b2dbbf3f0690a219f40e2d9afcf64f9ab7cc1be722937c26b4bc"
+
+[[package]]
+name = "windows_aarch64_msvc"
 version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469"
+
+[[package]]
+name = "windows_i686_gnu"
+version = "0.48.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a75915e7def60c94dcef72200b9a8e58e5091744960da64ec734a6c6e9b3743e"
 
 [[package]]
 name = "windows_i686_gnu"
@@ -4667,9 +4696,21 @@ checksum = "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66"
 
 [[package]]
 name = "windows_i686_msvc"
+version = "0.48.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f55c233f70c4b27f66c523580f78f1004e8b5a8b659e05a4eb49d4166cca406"
+
+[[package]]
+name = "windows_i686_msvc"
 version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66"
+
+[[package]]
+name = "windows_x86_64_gnu"
+version = "0.48.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "53d40abd2583d23e4718fddf1ebec84dbff8381c07cae67ff7768bbf19c6718e"
 
 [[package]]
 name = "windows_x86_64_gnu"
@@ -4679,9 +4720,21 @@ checksum = "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78"
 
 [[package]]
 name = "windows_x86_64_gnullvm"
+version = "0.48.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0b7b52767868a23d5bab768e390dc5f5c55825b6d30b86c844ff2dc7414044cc"
+
+[[package]]
+name = "windows_x86_64_gnullvm"
 version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d"
+
+[[package]]
+name = "windows_x86_64_msvc"
+version = "0.48.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ed94fce61571a4006852b7389a063ab983c02eb1bb37b47f8272ce92d06d9538"
 
 [[package]]
 name = "windows_x86_64_msvc"
@@ -4701,8 +4754,7 @@ dependencies = [
 [[package]]
 name = "wrapper"
 version = "0.1.4"
-source = "registry+ssh://git@sigit01/~/Development/ContinuousC/Ktra-registry"
-checksum = "8834250f44e7f7deddde2a4cd750815eca4285721bd0326045ef6ced27a97625"
+source = "git+https://github.com/ContinuousC/Wrapper.git?rev=057b57faa05c7c89bc461113e537107b108be7d1#057b57faa05c7c89bc461113e537107b108be7d1"
 
 [[package]]
 name = "write16"
@@ -4801,7 +4853,7 @@ dependencies = [
 
 [[package]]
 name = "zeroize"
-version = "1.7.0"
+version = "1.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ced3678a2879b30306d323f4542626697a464a97c0a07c9aebf7ebca65cd4dde"
 
